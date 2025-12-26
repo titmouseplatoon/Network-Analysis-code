@@ -1,3 +1,6 @@
+### This was my test run of Dai's tutorial (https://dshizuka.github.io/networkanalysis/index.html) 
+### email Hannah Baetge (hbaetge@trinity.edu) with questions that cannot be answerd by the above link. 
+
 ### setup ###
 install.packages(c("igraph", "bipartite", "asnipe", "assortnet", "ggplot2", "ggmap", "rnetcarto", "ecodist", "igraphdata", "statnet", "RColorBrewer", "tidyverse"))
     ## installs packages needed, can be re-run to update version. 
