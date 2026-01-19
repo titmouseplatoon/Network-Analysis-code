@@ -6,7 +6,7 @@ library(tidyr)
 library(lubridate)
 library(asnipe)
 library(igraph)
-setwd("/Users/hannahbaetge/Library/CloudStorage/OneDrive-TrinityUniversity/NETwork ANalYsis/RFID Data copy")
+setwd("/Users/paige/Projects/Network-Analysis-code/Feeder Files")
 #I need to reformat the data to match the columns from the worked example
 # Step 1: Read the CSV file into R
 FeederA.1 <- read.csv("000ADATA.TXT", header = TRUE)
