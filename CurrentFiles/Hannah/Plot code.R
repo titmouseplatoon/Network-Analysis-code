@@ -10,13 +10,14 @@ library(dplyr)
 library(tidyr)
 library(purrr)
 library(igraph)
+library(tidyverse)
 
 # then, call merged data set (includes all feeders & master banding info)
 ######CHANGE THIS IN FUTURE#########
-dataset<-read_csv ("FullRFID_Data_With_MBS.csv")
+dataset<-read_csv ("CurrentFiles/Hannah/FullRFID_Data_With_MBS.csv")
 
 # You may change time_window to anything (in seconds)
-time_window <- 3   # seconds 
+time_window <- 5   # seconds 
 
 df_events <- dataset%>%
   arrange(Feeder, DateTime) %>%  # Important: sort by feeder & time
@@ -166,7 +167,7 @@ legend("topleft",
 
 #### start highlight for large, high control PDF network
 # print big! - will save to WD
-pdf("bird_network (window= 3 sec) (10X10 size).pdf", width = 10, height = 10)
+pdf("bird_network (window= 5 sec) (15X15 size).pdf", width = 15, height = 15) ### UPDATE this line w/ each new plot.
 
 plot(g,
      layout = layout_with_fr, # layout style
