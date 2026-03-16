@@ -46,4 +46,4 @@ captured_filtered <- captured[captured$capturedLocations != "" & !is.na(captured
 combined <- merge(locations, captured_filtered[, c("id","capturedLocations")], by.x = "id", by.y = "id", all.x=TRUE)
 
 #Outputs the combined table to a csv for comparison
-write.csv(combined, "./CurrentFiles/PaigeFiles/CapturedVsRfid2024-6", row.names = FALSE)
+#write.csv(combined, "./CurrentFiles/PaigeFiles/CapturedVsRfid2024-6", row.names = FALSE)
