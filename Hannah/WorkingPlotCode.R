@@ -10,13 +10,17 @@ library(dplyr)
 library(tidyr)
 library(purrr)
 library(igraph)
+library(readr)
 
 # then, call merged data set (includes all feeders & master banding info)
 ######CHANGE THIS IN FUTURE#########
 dataset<-read_csv ("FullRFID_Data_With_MBS.csv")
 
 # You may change time_window to anything (in seconds)
-time_window <- 3   # seconds 
+time_window <- 15   # seconds 
+cutvalue <- 0.8 # change this to determine the strength of the edges you want
+  # ex: 0.8 cuts off the bottom 80% - so only the top 20% of edges are graphed
+
 
 df_events <- dataset%>%
   arrange(Feeder, DateTime) %>%  # Important: sort by feeder & time
@@ -58,8 +62,15 @@ edge_counts <- pair_edges %>%
   group_by(from, to) %>%
   summarise(weight = n(), .groups = "drop")
 
+
 edge_counts <- edge_counts %>% 
   filter(!is.na(from), !is.na(to)) #remove birds with NO edges (prevents "NA" node later)
+
+# keep only strongest 20% of edges
+threshold <- quantile(edge_counts$weight, cutvalue)
+
+edge_counts <- edge_counts %>%
+  filter(weight >= threshold)
 
 head(edge_counts) #make sure this looks good
 
@@ -88,7 +99,7 @@ plot(g)
 plot(g,
      layout = layout_as_tree(g),)
 
-###### Want to wee info on a bird? #######
+###### Want to add info on a bird? #######
 
 get_bird_info <- function(BirdName) { # BirdName= 3 letter color code of the bird
   df_events %>%
@@ -132,14 +143,23 @@ V(g)$location <- location_lookup[V(g)$name]
 V(g)$age      <- age_lookup[V(g)$name]
 V(g)$crest    <- crest_lookup[V(g)$name]
 
+
 # Vertex colors based on sex
 
 V(g)$color <- ifelse(
   V(g)$sex == "F", "pink",
-  ifelse(V(g)$sex == "M", "lightblue", "grey")  # default for everything else
+  ifelse(V(g)$sex == "M", "lightblue", "grey")
 )
-    V(g)$color[is.na(V(g)$color)] <- "grey"  # Make NAs grey
 
+V(g)$color[is.na(V(g)$color)] <- "grey"
+    
+# vertex border color based on age 
+V(g)$age <- trimws(V(g)$age) # remove hidden spaces from age values
+
+V(g)$frame.color <- ifelse(
+  V(g)$age %in% c("Nestling", "HY"), "orange",
+  ifelse(V(g)$age %in% c("AHY", "SY", "ASY"), "red", "black")
+)
 
 # check
 data.frame(name = V(g)$name,
@@ -149,11 +169,11 @@ data.frame(name = V(g)$name,
 plot(g,
      layout = layout_with_fr(g), #clasic layout
      vertex.color = V(g)$color,   # use the colors we assigned
-     ,           #put nothing, keep labels
+     vertex.label.color = "black",
      vertex.size = 25,            # adjust node size
      edge.width = E(g)$weight/5,    # edge width proportional to weight
      edge.color = "black",
-     main = paste("Bird Co-occurrence Network (time window =", time_window, "seconds)")
+     main = paste("Bird Network (time window =", time_window, "seconds) (threshold = ", (1-cutvalue) *100,"% )")
     )
 
 # Add legend
@@ -166,16 +186,27 @@ legend("topleft",
 
 #### start highlight for large, high control PDF network
 # print big! - will save to WD
-pdf("bird_network (window= 3 sec) (10X10 size).pdf", width = 10, height = 10)
+pdf(" age colored node borders layout bird_network top 0.2 cut-off (window= 15 sec) (10X10 size).pdf", width = 10, height = 10)
+
+# design a layout that forces the nodes apart for move visibility
+layout_spread <- layout_with_fr(
+  g,
+  weights = E(g)$weight /1000,
+  niter = 8000,
+  area = vcount(g)^6
+)
 
 plot(g,
-     layout = layout_with_fr, # layout style
-     vertex.color = V(g)$color,   # use the colors we assigned
-     ,           #put nothing, keep labels
-     vertex.size = 5,            # adjust node size
-     edge.width = E(g)$weight/5,    # edge width proportional to weight
-     edge.color = "black",
-     edge.curved = FALSE     # forces straight edges
+     layout = layout_spread,    # layout style
+     vertex.color = V(g)$color, # use the colors we assigned- sex
+     vertex.label.cex = 0.8,    # make label a little bigger 
+     vertex.label.color = "black" ,
+     vertex.size = 8,           # adjust node size
+     vertex.frame.color = V(g)$frame.color,  # age border color
+     vertex.frame.width = 2,                 # border thickness
+     edge.width = E(g)$weight/5,             # edge width proportional to weight
+     edge.color = "black", #edges will be black                
+     edge.curved = FALSE   # forces straight edges
     )
 
 title(
@@ -193,6 +224,15 @@ legend("topleft",
        cex = 1,          # text size in legend
        bty = "n"           # no box around legend
       )
+
+legend("topright",
+       legend = c("Juvenile", "Adult"),
+       pch = 21,
+       pt.bg = "white",
+       pt.cex = 2,
+       pt.lwd = 2,
+       col = c("orange", "red"),
+       bty = "n")
 
 #remove double edges (eg A:B = B:A based on this code segment)
 g <- simplify(
