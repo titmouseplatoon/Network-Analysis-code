@@ -10,6 +10,6 @@ for(letter in feeders){
   timeDupes <-any(duplicated(feederOccurances$DateTime))
   cat(letter, ":",
         "\nHas duplicate times for one individual: ",personalDupes,
-        "\nHas duplicate times between individuals: ",timeDupes)
+        "\nHas duplicate times between individuals: ",timeDupes,"\n")
 }
 #Feeder RFID info as of 3/30/2026 says it keeps pings within a second only if they're different individuals
