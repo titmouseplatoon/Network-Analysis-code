@@ -17,7 +17,7 @@ library(tidyverse)
 dataset<-read_csv ("CurrentFiles/Hannah/FullRFID_Data_With_MBS.csv")
 
 # You may change time_window to anything (in seconds)
-time_window <- 5   # seconds 
+time_window <- 12   # seconds 
 
 df_events <- dataset%>%
   arrange(Feeder, DateTime) %>%  # Important: sort by feeder & time
@@ -43,6 +43,7 @@ pair_edges <- df_events %>%
   group_by(Feeder, Event_ID) %>%
   summarise(birds = list(unique(ColorCombo)), .groups = "drop") %>%
   filter(lengths(birds) > 1) %>%
+  
   # create all bird-to-bird combinations as data frame with proper column names
   mutate(edges = map(birds, function(x) {
     combos <- t(combn(x, 2))
@@ -60,8 +61,12 @@ edge_counts <- pair_edges %>%
   summarise(weight = n(), .groups = "drop")
 
 edge_counts <- edge_counts %>% 
-  filter(!is.na(from), !is.na(to)) #remove birds with NO edges (prevents "NA" node later)
+   filter(!is.na(from), !is.na(to)) #remove birds with NO edges (prevents "NA" node later)
 
+edge_counts <- edge_counts %>%   
+  filter(!weight == 1) #remove bird combos with only 1 edge ****** CHANGE THIS if you don't  want to cut off
+                       #                                             interactions that only happen once
+  
 head(edge_counts) #make sure this looks good
 
 # create adjacency matrix
@@ -80,25 +85,14 @@ cat("\nGraph summary:\n")
 print(g)
 
 
-######## NOW PLOT #######
+######## NOW PLOT ####################################
 
+# basic test
 plot(g)
 
-# tree layout 
-
-plot(g,
-     layout = layout_as_tree(g),)
-
-###### Want to wee info on a bird? #######
-
-get_bird_info <- function(BirdName) { # BirdName= 3 letter color code of the bird
-  df_events %>%
-    filter(ColorCombo == BirdName) %>%
-    select(ColorCombo, Feeder, DateTime, Event_ID, Sex,DateLastCaptured,Status,Location,Age, ColorCrest )
-}
 
 
-# make a look-up to color-code & sort by atrabutes 
+# make a look-up to color-code & sort by attributes 
 
 bird_attributes <- df_events %>%
   select(ColorCombo, Sex, Status, Location, Age, ColorCrest) %>%
@@ -120,11 +114,11 @@ bird_attributes <- df_events %>%
   )
 
 # create lookup vectors for graph vertex attributes
-sex_lookup <- setNames(bird_attributes$Sex, bird_attributes$ColorCombo)
-status_lookup <- setNames(bird_attributes$Status, bird_attributes$ColorCombo)
-location_lookup <- setNames(bird_attributes$Location, bird_attributes$ColorCombo)
-age_lookup <- setNames(bird_attributes$Age, bird_attributes$ColorCombo)
-crest_lookup <- setNames(bird_attributes$ColorCrest, bird_attributes$ColorCombo)
+  sex_lookup <- setNames(bird_attributes$Sex, bird_attributes$ColorCombo)
+  status_lookup <- setNames(bird_attributes$Status, bird_attributes$ColorCombo)
+  location_lookup <- setNames(bird_attributes$Location, bird_attributes$ColorCombo)
+  age_lookup <- setNames(bird_attributes$Age, bird_attributes$ColorCombo)
+  crest_lookup <- setNames(bird_attributes$ColorCrest, bird_attributes$ColorCombo)
 
 # Attach to graph vertices
 V(g)$sex      <- sex_lookup[V(g)$name]
@@ -141,12 +135,21 @@ V(g)$color <- ifelse(
 )
     V(g)$color[is.na(V(g)$color)] <- "grey"  # Make NAs grey
 
+    
+# vertex border color based on age 
+    V(g)$age <- trimws(V(g)$age) # remove hidden spaces from age values
+    
+    V(g)$frame.color <- ifelse(
+      V(g)$age %in% c("Nestling", "HY"), "orange",
+      ifelse(V(g)$age %in% c("AHY", "SY", "ASY"), "red", "black")
+    )
 
 # check
 data.frame(name = V(g)$name,
            sex = sex_lookup[V(g)$name])
 
 
+########### Make plot w/in R to check components - will be crowded############
 plot(g,
      layout = layout_with_fr(g), #clasic layout
      vertex.color = V(g)$color,   # use the colors we assigned
@@ -157,27 +160,52 @@ plot(g,
      main = paste("Bird Co-occurrence Network (time window =", time_window, "seconds)")
     )
 
-# Add legend
+# Add legends
 legend("topleft",
        legend = c("Female", "Male", "Unknown"),
        pch = 21,
        pt.bg = c("pink", "lightblue", "grey"),
        pt.cex = 2)   # adjust legend point size
 
+legend("topright",
+       legend = c("Juvenile", "Adult"),
+       pch = 21,
+       pt.bg = "white",
+       pt.cex = 2,
+       pt.lwd = 2,
+       col = c("orange", "red"),
+       bty = "n")
+
+
+
 
 #### start highlight for large, high control PDF network
+
+### BE SURE TO CHANGE PDF NAME !!!!!!!!!
+
 # print big! - will save to WD
-pdf("bird_network (window= 5 sec) (15X15 size).pdf", width = 15, height = 15) ### UPDATE this line w/ each new plot.
+pdf(" formated layout bird_network No SINGLE Interactionts- (window= 30 sec) (10X10 size).pdf", width = 10, height = 10)
+
+# design a layout that forces the nodes apart for move visibility
+layout_spread <- layout_with_fr(
+  g,
+  weights = E(g)$weight /1000,
+  niter = 8000,
+  area = vcount(g)^6
+)
 
 plot(g,
-     layout = layout_with_fr, # layout style
-     vertex.color = V(g)$color,   # use the colors we assigned
-     ,           #put nothing, keep labels
-     vertex.size = 5,            # adjust node size
-     edge.width = E(g)$weight/5,    # edge width proportional to weight
-     edge.color = "black",
-     edge.curved = FALSE     # forces straight edges
-    )
+     layout = layout_spread,    # layout style
+     vertex.color = V(g)$color, # use the colors we assigned- sex
+     vertex.label.cex = 0.8,    # make label a little bigger 
+     vertex.label.color = "black" ,
+     vertex.size = 8,           # adjust node size
+     vertex.frame.color = V(g)$frame.color,  # age border color
+     vertex.frame.width = 2,                 # border thickness
+     edge.width = E(g)$weight/5,             # edge width proportional to weight
+     edge.color = "black", #edges will be black                
+     edge.curved = FALSE   # forces straight edges
+)
 
 title(
   main = sprintf("Bird Co-occurrence Network (time window = %d seconds)", time_window),
@@ -193,7 +221,16 @@ legend("topleft",
        pt.cex = 2,         # circle size in legend
        cex = 1,          # text size in legend
        bty = "n"           # no box around legend
-      )
+)
+
+legend("topright",
+       legend = c("Juvenile", "Adult"),
+       pch = 21,
+       pt.bg = "white",
+       pt.cex = 2,
+       pt.lwd = 2,
+       col = c("orange", "red"),
+       bty = "n")
 
 #remove double edges (eg A:B = B:A based on this code segment)
 g <- simplify(
@@ -205,3 +242,39 @@ g <- simplify(
 
 dev.off() #turn off print
 #### stop highlight
+
+
+################################################
+
+###### Want to see info on a bird? #######
+
+get_bird_info <- function(BirdName) { # BirdName= "3 letter color code of the bird" IN QUOTES!
+  df_events %>%
+    filter(ColorCombo == BirdName) %>%
+    select(ColorCombo, Feeder, DateTime, Event_ID, Sex,DateLastCaptured,Status,Location,Age, ColorCrest )
+}
+
+
+
+
+
+####  stats   #################################
+
+#	Number of geodesic paths that go through a given node
+be=betweenness(g, normalized=T)
+ #plot(g,  vertex.label="", vertex.color="gold", edge.color="slateblue", vertex.size=be*50, edge.width=E(g)$weight*5)
+be
+sort(be, decreasing = TRUE, na.last = NA)
+hist(be, breaks=10)
+
+# 	Number of edges connected to node
+degree(g)
+sort(degree(g), decreasing = TRUE, na.last = NA)
+hist(degree(g), breaks=10, col="gray")
+
+#	Sum of edge weights connected to a node (aka weighted degree)
+graph.strength(g)
+sort(graph.strength(g), decreasing = TRUE)
+hist(graph.strength(g), breaks=10)
+
+
