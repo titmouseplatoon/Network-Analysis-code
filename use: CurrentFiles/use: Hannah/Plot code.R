@@ -14,7 +14,7 @@ library(tidyverse)
 
 # then, call merged data set (includes all feeders & master banding info)
 ######CHANGE THIS IN FUTURE#########
-dataset<-read_csv ("CurrentFiles/Hannah/FullRFID_Data_With_MBS.csv")
+dataset<-read_csv ("postfledgingmergedata.csv")
 
 # You may change time_window to anything (in seconds)
 time_window <- 12   # seconds 
@@ -95,30 +95,30 @@ plot(g)
 # make a look-up to color-code & sort by attributes 
 
 bird_attributes <- df_events %>%
-  select(ColorCombo, Sex, Status, Location, Age, ColorCrest) %>%
+  select(ColorCombo, Sex, Status, LocationCaptured, Age, CrestColor) %>%
   mutate(
     Sex = na_if(Sex, ""),           # turn "" into NA
     Status = na_if(Status, ""),
-    Location = na_if(Location, ""),
+    LocationCaptured = na_if(LocationCaptured, ""),
     Age = na_if(Age, ""),
-    ColorCrest = na_if(ColorCrest, "")
+    CrestColor = na_if(CrestColor, "")
   ) %>%
   group_by(ColorCombo) %>%
   summarise(
     Sex        = first(na.omit(Sex)),
     Status     = first(na.omit(Status)),
-    Location   = first(na.omit(Location)),
+    LocationCaptured   = first(na.omit(LocationCaptured)),
     Age        = first(na.omit(Age)),
-    ColorCrest = first(na.omit(ColorCrest)),
+    CrestColor = first(na.omit(CrestColor)),
     .groups = "drop"
   )
 
 # create lookup vectors for graph vertex attributes
   sex_lookup <- setNames(bird_attributes$Sex, bird_attributes$ColorCombo)
   status_lookup <- setNames(bird_attributes$Status, bird_attributes$ColorCombo)
-  location_lookup <- setNames(bird_attributes$Location, bird_attributes$ColorCombo)
+  location_lookup <- setNames(bird_attributes$LocationCaptured, bird_attributes$ColorCombo)
   age_lookup <- setNames(bird_attributes$Age, bird_attributes$ColorCombo)
-  crest_lookup <- setNames(bird_attributes$ColorCrest, bird_attributes$ColorCombo)
+  crest_lookup <- setNames(bird_attributes$CrestColor, bird_attributes$ColorCombo)
 
 # Attach to graph vertices
 V(g)$sex      <- sex_lookup[V(g)$name]
@@ -184,7 +184,7 @@ legend("topright",
 ### BE SURE TO CHANGE PDF NAME !!!!!!!!!
 
 # print big! - will save to WD
-pdf(" formated layout bird_network No SINGLE Interactionts- (window= 30 sec) (10X10 size).pdf", width = 10, height = 10)
+pdf(" SURF 2026 Post Fledging- (window= 12 sec) (10X10 size).pdf", width = 10, height = 10)
 
 # design a layout that forces the nodes apart for move visibility
 layout_spread <- layout_with_fr(
@@ -208,7 +208,7 @@ plot(g,
 )
 
 title(
-  main = sprintf("Bird Co-occurrence Network (time window = %d seconds)", time_window),
+  main = sprintf("Post-Fledging Bird Co-occurrence Network (time window = %d seconds)", time_window),
   cex.main = 1,  # scales the title text
   font.main = 2,     # bold
   line = 0        # increases vertical distance from top
