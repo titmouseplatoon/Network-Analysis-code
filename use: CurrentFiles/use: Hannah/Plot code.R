@@ -14,7 +14,7 @@ library(tidyverse)
 
 # then, call merged data set (includes all feeders & master banding info)
 ######CHANGE THIS IN FUTURE#########
-dataset<-read_csv ("prefledgingmergedata.csv")
+dataset<-read_csv ("Fall2025_merged_allfeeders_w_MBS.csv")
 
 # You may change time_window to anything (in seconds)
 time_window <- 12   # seconds 
@@ -184,7 +184,7 @@ legend("topright",
 ### BE SURE TO CHANGE PDF NAME !!!!!!!!!
 
 # print big! - will save to WD
-pdf(" SURF 2026 PRE Fledging- (window= 12 sec) (10X10 size).pdf", width = 10, height = 10)
+pdf(" Fall 2025 Platoons- (window= 12 sec) (10X10 size).pdf", width = 10, height = 10)
 
 # design a layout that forces the nodes apart for move visibility
 layout_spread <- layout_with_fr(
@@ -208,7 +208,7 @@ plot(g,
 )
 
 title(
-  main = sprintf("Pre-Fledging Bird Co-occurrence Network (time window = %d seconds)", time_window),
+  main = sprintf("Fall 2025 Platoon Bird Co-occurrence Network (time window = %d seconds)", time_window),
   cex.main = 1,  # scales the title text
   font.main = 2,     # bold
   line = 0        # increases vertical distance from top
