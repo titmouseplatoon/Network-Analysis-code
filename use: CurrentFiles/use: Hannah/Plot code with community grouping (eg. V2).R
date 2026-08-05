@@ -1,9 +1,26 @@
-# Birds that appear very close together in time at the SAME feeder are 
+########### The easiest way to run this code is to:
+  #Select all (Mac: Command +A)
+  #Press run (Top right of script panel)
+#The code has built-in prompts that will ask you to select and name files
+# Each run will make two file outputs: the plot PDF and the Community assignment csv
+  #the files will be saved to your working directory
+    # If you need to find your Working Directory type: getwd() into the console
+    # Need to change your Working DIrectory?
+        # Click Session in the top menu bar.
+        # Hover over Set Working Directory.
+        # Click "Choose Directory"....Select your folder and click Open. OR choose "To Source File Location" to set it to the folder where your active script is saved.
+
+#Anymore Questions? Email me! I don't bite! (Hannah Baetge) hlbaetge@gmail.com
+
+#####Now on to the Biology!!!!######
+#Birds that appear very close together in time at the SAME feeder are 
 # considered part of the same group. 
 #
 # We will assign events by saying:
-#     "If two records are within 30 seconds at the same feeder, they are a group"
+#     "If two records are within 12 seconds at the same feeder, they are a group"
 #
+# Why 12 seconds? https://docs.google.com/document/d/1PCgzIrbiQs-jgxxuqGXfAgdFJHJBLPKTJ14V4SqF38Q/edit?usp=sharing
+  #saved in the RFID folder of the drive > Data >Feeder Data > 2025 Data
 
 # first! load packages 
 library(dplyr)

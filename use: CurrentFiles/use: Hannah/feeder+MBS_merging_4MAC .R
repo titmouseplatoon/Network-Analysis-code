@@ -1,4 +1,39 @@
-#THIS SHOULD NOT CRASH
+#THIS SHOULD NOT CRASH - Cole Robinson (crobins4@trinity.edu)
+
+# Congrats! You found the starting place! 
+#This code combines the data you just collected (good job! you survived!) with your current Master Banding Sheet
+#This code should only have to be run ONCE whenever you collect RFID data 
+  # eg, this script dumps all the ALL the files from ALL the RFID setups into ONE. BIG. CSV File. 
+      # THEN It attaches Master Banding Sheet info about the "Bird"(RFID tag number) to EVERY entry
+
+#It is a Fantastic and MASSIVE file (in terms of data. it is still way smaller than a medium sized excel file b/c it is a csv)
+
+#So, what Do you need to prep?
+  #You need to take all the files you pulled of the RFID SD cards and put them in a folder
+  #The files need to be named like this: 000DATA.TXT
+    #NOTE!!! VERY IMPORTANT!!!!
+      # the letter in the file name needs to match the PHYSICAL feeder/location  it was at. (ex: 00ADATA.TXT for Feeder A) 
+        #eg. If you had RFID setup B at feeder B, but then a raccoon ate it and therefore you had to trade in RFID setup 07,
+            # then you need to modify the file Named 007DATA.TXT to-> 00ADATA.TXT 
+            # because this code pulls the information about location from the file name.
+
+#So, Your Prep-Checklist is this:
+  #[]confirm the file names match their physical location
+  #[]dump all the files into one folder you can find easy-DO NOT make sub-folders (you may need to combine files if you have multiple files form one location, and your computer keeps trying to add a "2" or something to the file name)
+  #[]Put the 000LOG.TXT files in a separate folder- you do not need them
+  #[]download the Master Banding Sheet as a csv file
+
+#A final note about tolerance- 
+  #when it asks you for tolerance, this is the interval that, within which, repeated reads of the SAME bird are discarded. 
+  #Suggestion: leave as 1, this excludes the least data while still standardizing between RFID systems 
+    #the old RFID Systems already clean out repeated reads within one second, the new systems let you adjust this- so this input is mostly just a backup to maintain consistency.
+    # why is it needed? The plot code determines how closely associated birds are based on the NUMBER of interactions they have, if one system is keeping more reads than the other, it's interactions will inherently be stronger
+
+# Ok, This is lots of info and this is only the tip of the iceberg 
+# If you have questions-> EMAIL! 
+#Seriously, I read my emails aloud to my fish- and they crave biology! Please Send Inquiries!
+# hlbaetge@gmail.com (Hannah Baetge)
+
 
 library(data.table)
 
@@ -218,3 +253,5 @@ if(tolerance == 0){
     row.names = FALSE
   )
 }
+
+# Congrats! Time to take this csv file to the plot code!
