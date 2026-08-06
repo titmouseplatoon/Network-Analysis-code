@@ -1,0 +1,13 @@
+"Season1","Community1","Season2","Community2","SharedBirds","LostBirds","GainedBirds","Shared","Union","Jaccard"
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",1,"CRY, YYN (was YNO)","GDD (was GDR)","GDN (was GDY), GPR, WDD, YRP",2,7,0.286
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",2,"GBO (was GPT), YGD","","GPW, GSN, WDY",2,5,0.4
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",3,"GDO, YGY","PBS, YND","WPS",2,5,0.4
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",4,"SWB, SYO","GOS, PBWorPWB, RBT, SYR","GNG, PDN, SDR, SDT, SSS",2,11,0.182
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",6,"YPS","PLS, RTP","GTP, SOG, SPT, WPG",1,7,0.143
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",8,"PND","GDW (wasGYW)","RNO",1,3,0.333
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",6,"SOG","PNW, SOT, YDP","GTP, SPT, WPG, YPS",1,8,0.125
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",9,"RGT, SGB, STT","YPW","",3,4,0.75
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",11,"SDO, SWT","RRD, RRR, RRY","",2,5,0.4
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",13,"WOG, WSY, YBN","","",3,3,1
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",12,"YDW","WWB","SNR (was SNO), WNS",1,4,0.25
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",7,"YDT, YWS","","NRO, NSS, WPD",2,5,0.4

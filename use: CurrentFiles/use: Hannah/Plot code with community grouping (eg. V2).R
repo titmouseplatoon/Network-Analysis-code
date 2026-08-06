@@ -1,3 +1,8 @@
+# To Run This code you will need the output file from "feeder+MBS_merging_4MAC.R" 
+#It should be a large CSV file (name it with the general time frame the data is from)
+                                # ex. Spring 2025 - this prevents confusion later
+
+
 ########### The easiest way to run this code is to:
   #Select all (Mac: Command +A)
   #Press run (Top right of script panel)
@@ -10,15 +15,15 @@
         # Hover over Set Working Directory.
         # Click "Choose Directory"....Select your folder and click Open. OR choose "To Source File Location" to set it to the folder where your active script is saved.
 
-#Anymore Questions? Email me! I don't bite! (Hannah Baetge) hlbaetge@gmail.com
+#Anymore Questions? Email me! I'm like a grandparent, I LOVE emails!!!
+  #(Hannah Baetge) hlbaetge@gmail.com
 
 #####Now on to the Biology!!!!######
-#Birds that appear very close together in time at the SAME feeder are 
-# considered part of the same group. 
-#
+#Birds that appear very close together in time at the SAME feeder are considered part of the same group. 
+
 # We will assign events by saying:
 #     "If two records are within 12 seconds at the same feeder, they are a group"
-#
+
 # Why 12 seconds? https://docs.google.com/document/d/1PCgzIrbiQs-jgxxuqGXfAgdFJHJBLPKTJ14V4SqF38Q/edit?usp=sharing
   #saved in the RFID folder of the drive > Data >Feeder Data > 2025 Data
 
@@ -87,7 +92,7 @@ pair_edges <- df_events %>%
   filter(lengths(birds) > 1) %>%
   
   # create all bird-to-bird combinations as data frame with proper column names
-  mutate(edges = map(birds, function(x) {
+  mutate(edges = purrr::map(birds, function(x) {
     combos <- t(combn(x, 2))
     df <- data.frame(from = combos[,1], to = combos[,2], stringsAsFactors = FALSE)
     return(df)
@@ -328,7 +333,7 @@ legend("topright",
 
 
 
-#### start highlight for large, high control PDF network
+#### start highlight for large, high control PDF network ############################
 
 ### BE SURE TO CHANGE PDF NAME !!!!!!!!!
 ### start highlight for large, high control PDF network ### 
@@ -359,10 +364,10 @@ pdf_name <- sprintf(
   time_window
 )
 
-cat("Saving PDF as:", pdf_name, "\n")
+cat("Saving PDF as:", pdf_name, "\n") 
 
 
-# print big! - saves your plot
+# print big! - saves your plot ###########################
 pdf(pdf_name, width = 10, height = 10)
 
 
@@ -470,6 +475,7 @@ write.csv(
   layout_file,
   row.names = FALSE
 )
+
 # Stop if duplicates are found
 old_layout <- layout_df
   stopifnot( nrow(old_layout) == length(unique(old_layout$Bird)))
@@ -491,6 +497,7 @@ plot(g,
      mark.lwd = 0
 )
 
+
 title(
   main = sprintf(
     "%s (time window = %d seconds)",
@@ -501,6 +508,7 @@ title(
   font.main = 2,     # bold
   line = 0        # increases vertical distance from top
 )
+
 
 legend("topleft",
        legend = c("Female", "Male", "Unknown"),
@@ -519,6 +527,64 @@ legend("topright",
        pt.lwd = 2,
        col = c("orange", "red"),
        bty = "n")
+
+# Community membership
+membership_vec <- membership(communities)
+
+# Community centers in the ORIGINAL layout coordinates
+community_centers <- t(sapply(sort(unique(membership_vec)), function(comm){
+  
+  verts <- which(membership_vec == comm)
+  
+  c(
+    mean(layout_spread[verts,1]),
+    
+  #pick one below based on what your graph needs
+    mean(layout_spread[verts,2]) +
+      0.20 * diff(range(layout_spread[verts,2]))
+    
+    #max(layout_spread[verts,2]) +
+      #0.03 * diff(range(layout_spread[,2]))
+  )
+}))
+
+# ---- Apply the SAME scaling that igraph uses ----
+
+usr <- par("usr")
+
+x_rng <- range(layout_spread[,1])
+y_rng <- range(layout_spread[,2])
+
+community_centers[,1] <-
+  (community_centers[,1] - x_rng[1]) /
+  diff(x_rng) *
+  diff(usr[1:2]) + usr[1]
+
+community_centers[,2] <-
+  (community_centers[,2] - y_rng[1]) /
+  diff(y_rng) *
+  diff(usr[3:4]) + usr[3]
+
+# White circles with colored border
+points(
+  community_centers[,1],
+  community_centers[,2],
+  pch = 21,
+  bg = "white",
+  col = community_colors[sort(unique(membership_vec))],
+  cex = 1.8,
+  lwd = 2
+)
+
+# Draw labels
+text(
+  community_centers[,1],
+  community_centers[,2],
+  labels = sort(unique(membership_vec)),
+  cex = 0.5,
+  font = 2,
+  col = "black"
+)
 
 
 dev.off() #turn off print

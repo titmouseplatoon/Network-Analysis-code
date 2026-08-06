@@ -6,13 +6,19 @@
 #Note! Some Questions are best answered in plot based statistical analysis
   # there is a file called "Stats for Plots.R" Look at this for measures of centrality
 
+#Note! This code can only compare to communities at a time.
+#       e.g.. Fall to spring, fall to summer, or spring to summer.
+#     if you need to compare multiple communities at once, use: Longitudinal Analysis.R
+#     This code makes a Sankey plot comparing 2 seasons and lots of ARI and Jaccard stats- but it is one step at a time
+
+
 #This code will use the _Communities.csv files, not the plots. Have those files at the ready!
 
-# This code spits out a LOT of files (for reduendundency)
+# This code spits out a LOT of files (for redundancy)
 # I suggest making a new folder each time you run this code 
     #AND temporarily set your working directory to to that folder
 # If you need to find your Working Directory type: getwd() into the console
-# Need to change your Working DIrectory?
+# Need to change your Working Directory?
 # Click Session in the top menu bar.
 # Hover over Set Working Directory.
 # Click "Choose Directory"....Select your folder and click Open. OR choose "To Source File Location" to set it to the folder where your active script is saved.
@@ -202,6 +208,8 @@ for(name in names(community_datasets)){
   
 }
 
+# No Note? - Then it all looks good!
+# Great job, you imported the right files!
 
 #Run Matrix #########################################
 # Now run all imported data sets through the Matrix function.
@@ -529,76 +537,7 @@ cat("\n\n Whoop!!! \n")
 
 #Create Ploting Tables ######################################################
 # time to plot changes in community membership over time hot-darn-wowza!
-#  Create Sankey Labels
 
-# Function: make_node_labels()
-
-# Purpose:
-# Create labels for each community that include:
-
-# Season
-# Community Number
-# Number of Birds
-# Bird Names
-
-# Output:
-# A dataframe with one row per community.
-
-make_node_labels <- function(df, season_name){
-  
-  node_table <- data.frame()
-  
-  communities <- sort(unique(df$Community))
-  
-  for(comm in communities){
-    
-    birds <- df %>%
-      filter(Community == comm) %>%
-      arrange(ColorCombo) %>%
-      pull(ColorCombo)
-    
-    label <- paste0(
-      
-      season_name,
-      
-      "\n\nCommunity ",
-      
-      comm,
-      
-      " (",
-      
-      length(birds),
-      
-      " birds)",
-      
-      "\n\n",
-      
-      paste(birds,
-            collapse="\n")
-      
-    )
-    
-    node_table <- rbind(
-      
-      node_table,
-      
-      data.frame(
-        
-        Community = comm,
-        
-        Label = label,
-        
-        stringsAsFactors = FALSE
-        
-      )
-      
-    )
-    
-  }
-  
-  return(node_table)
-  
-}
 
 
 # Keep Best Jaccard Match (% of community that moved on)
@@ -872,6 +811,78 @@ cat("\nTransition metadata saved.\n")
 # JUMP HERE #############################
 # FOR PLOTS #############################
 
+# Node Lables ##########################
+# Function: make_node_labels()
+
+# Purpose:
+# Create labels for each community that include:
+
+# Season
+# Community Number
+# Number of Birds
+# Bird Names
+
+# Output:
+# A dataframe with one row per community.
+
+make_node_labels <- function(df, season_name){
+  
+  node_table <- data.frame()
+  
+  communities <- sort(unique(df$Community))
+  
+  for(comm in communities){
+    
+    birds <- df %>%
+      filter(Community == comm) %>%
+      arrange(ColorCombo) %>%
+      pull(ColorCombo)
+    
+    label <- paste0(
+      
+      "Community ",
+      
+      comm,
+      
+      "\n",
+      
+      "n = ",
+      
+      length(birds),
+      
+      " birds",
+      
+      "\n",
+      
+      paste(birds,
+            collapse="\n")
+      
+    )
+    
+    node_table <- rbind(
+      
+      node_table,
+      
+      data.frame(
+        
+        Community = comm,
+        
+        Label = label,
+        
+        stringsAsFactors = FALSE
+        
+      )
+      
+    )
+    
+  }
+  
+  return(node_table)
+  
+}
+
+
+
 #Plot Community Sankey ###########################################################
 
 library(readr)
@@ -888,19 +899,43 @@ cat("\n\n select desired _AlluvialPlot_Table.csv \n")
 
 sankey_data <- read_csv(file.choose()) # pick data file you wish to graph
 
+#Make plot labels
+labels1 <- make_node_labels(
+  community_datasets[[unique(sankey_data$Season1)]]
+)
 
-# Create numeric IDs for the source and target communities
 
-# ggalluvial works better with categories converted to factors
+labels2 <- make_node_labels(
+  community_datasets[[unique(sankey_data$Season2)]]
+)
+
+# remove in-data labels (too long and detailed)
+sankey_data <- sankey_data %>%
+  select(
+    -any_of(c("Source", "Target", "Label"))
+  )
+
+
+# add labels to plot
 
 sankey_data <- sankey_data %>%
   
-  mutate(
-    
-    Source = factor(Source),
-    
-    Target = factor(Target)
-    
+  left_join(
+    labels1,
+    by = c("Community1" = "Community")
+  ) %>%
+  
+  rename(
+    Source = Label
+  ) %>%
+  
+  left_join(
+    labels2,
+    by = c("Community2" = "Community")
+  ) %>%
+  
+  rename(
+    Target = Label
   )
 
 
@@ -973,13 +1008,26 @@ community_sankey <- ggplot(
       
     ),
     
-    y = "Number of Shared Birds",
+    y = "",
     
     x = ""
     
   ) +
   
-  theme_minimal()
+  
+  theme_minimal() +
+  
+  theme(
+    axis.title.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  ) +
+  
+  theme(
+    legend.position = "none"
+  )
+  
+
 
 
 

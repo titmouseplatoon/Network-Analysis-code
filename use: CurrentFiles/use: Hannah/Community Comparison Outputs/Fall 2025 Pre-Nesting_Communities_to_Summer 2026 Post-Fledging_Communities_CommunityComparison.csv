@@ -1,0 +1,239 @@
+"Season1","Community1","Season2","Community2","SharedBirds","LostBirds","GainedBirds","Shared","Union","Jaccard"
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",1,"CRY, YYN (was YNO)","GDD (was GDR)","GDN (was GDY), GPR, WDD, YRP",2,7,0.286
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",2,"","CRY, YYN (was YNO), GDD (was GDR)","GBO (was GPT), GPW, GSN, WDY, YGD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",3,"","CRY, YYN (was YNO), GDD (was GDR)","GDO, WPS, YGY",0,6,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",4,"","CRY, YYN (was YNO), GDD (was GDR)","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,10,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",5,"","CRY, YYN (was YNO), GDD (was GDR)","GPB, ROW, SPW, WNP, WPB, YOD",0,9,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",6,"","CRY, YYN (was YNO), GDD (was GDR)","GTP, SOG, SPT, WPG, YPS",0,8,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",7,"","CRY, YYN (was YNO), GDD (was GDR)","NRO, NSS, WPD, YDT, YWS",0,8,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",8,"","CRY, YYN (was YNO), GDD (was GDR)","PND, RNO",0,5,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",9,"","CRY, YYN (was YNO), GDD (was GDR)","RGT, SGB, STT",0,6,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",10,"","CRY, YYN (was YNO), GDD (was GDR)","RTT, WYD",0,5,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",11,"","CRY, YYN (was YNO), GDD (was GDR)","SDO, SWT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",12,"","CRY, YYN (was YNO), GDD (was GDR)","SNR (was SNO), WNS, YDW",0,6,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",13,"","CRY, YYN (was YNO), GDD (was GDR)","WOG, WSY, YBN",0,6,0
+"Fall 2025 Pre-Nesting_Communities",1,"Summer 2026 Post-Fledging_Communities",14,"","CRY, YYN (was YNO), GDD (was GDR)","YSR, RDO",0,5,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",1,"","GBO (was GPT), YGD","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,8,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",2,"GBO (was GPT), YGD","","GPW, GSN, WDY",2,5,0.4
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",3,"","GBO (was GPT), YGD","GDO, WPS, YGY",0,5,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",4,"","GBO (was GPT), YGD","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,9,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",5,"","GBO (was GPT), YGD","GPB, ROW, SPW, WNP, WPB, YOD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",6,"","GBO (was GPT), YGD","GTP, SOG, SPT, WPG, YPS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",7,"","GBO (was GPT), YGD","NRO, NSS, WPD, YDT, YWS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",8,"","GBO (was GPT), YGD","PND, RNO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",9,"","GBO (was GPT), YGD","RGT, SGB, STT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",10,"","GBO (was GPT), YGD","RTT, WYD",0,4,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",11,"","GBO (was GPT), YGD","SDO, SWT",0,4,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",12,"","GBO (was GPT), YGD","SNR (was SNO), WNS, YDW",0,5,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",13,"","GBO (was GPT), YGD","WOG, WSY, YBN",0,5,0
+"Fall 2025 Pre-Nesting_Communities",2,"Summer 2026 Post-Fledging_Communities",14,"","GBO (was GPT), YGD","YSR, RDO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",1,"","GDO, PBS, YGY, YND","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,10,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",2,"","GDO, PBS, YGY, YND","GBO (was GPT), GPW, GSN, WDY, YGD",0,9,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",3,"GDO, YGY","PBS, YND","WPS",2,5,0.4
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",4,"","GDO, PBS, YGY, YND","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,11,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",5,"","GDO, PBS, YGY, YND","GPB, ROW, SPW, WNP, WPB, YOD",0,10,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",6,"","GDO, PBS, YGY, YND","GTP, SOG, SPT, WPG, YPS",0,9,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",7,"","GDO, PBS, YGY, YND","NRO, NSS, WPD, YDT, YWS",0,9,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",8,"","GDO, PBS, YGY, YND","PND, RNO",0,6,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",9,"","GDO, PBS, YGY, YND","RGT, SGB, STT",0,7,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",10,"","GDO, PBS, YGY, YND","RTT, WYD",0,6,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",11,"","GDO, PBS, YGY, YND","SDO, SWT",0,6,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",12,"","GDO, PBS, YGY, YND","SNR (was SNO), WNS, YDW",0,7,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",13,"","GDO, PBS, YGY, YND","WOG, WSY, YBN",0,7,0
+"Fall 2025 Pre-Nesting_Communities",3,"Summer 2026 Post-Fledging_Communities",14,"","GDO, PBS, YGY, YND","YSR, RDO",0,6,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",1,"","GNT, SRP, WDN, WDW, WWD","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,11,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",2,"","GNT, SRP, WDN, WDW, WWD","GBO (was GPT), GPW, GSN, WDY, YGD",0,10,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",3,"","GNT, SRP, WDN, WDW, WWD","GDO, WPS, YGY",0,8,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",4,"","GNT, SRP, WDN, WDW, WWD","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,12,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",5,"","GNT, SRP, WDN, WDW, WWD","GPB, ROW, SPW, WNP, WPB, YOD",0,11,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",6,"","GNT, SRP, WDN, WDW, WWD","GTP, SOG, SPT, WPG, YPS",0,10,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",7,"","GNT, SRP, WDN, WDW, WWD","NRO, NSS, WPD, YDT, YWS",0,10,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",8,"","GNT, SRP, WDN, WDW, WWD","PND, RNO",0,7,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",9,"","GNT, SRP, WDN, WDW, WWD","RGT, SGB, STT",0,8,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",10,"","GNT, SRP, WDN, WDW, WWD","RTT, WYD",0,7,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",11,"","GNT, SRP, WDN, WDW, WWD","SDO, SWT",0,7,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",12,"","GNT, SRP, WDN, WDW, WWD","SNR (was SNO), WNS, YDW",0,8,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",13,"","GNT, SRP, WDN, WDW, WWD","WOG, WSY, YBN",0,8,0
+"Fall 2025 Pre-Nesting_Communities",4,"Summer 2026 Post-Fledging_Communities",14,"","GNT, SRP, WDN, WDW, WWD","YSR, RDO",0,7,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",1,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,12,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",2,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","GBO (was GPT), GPW, GSN, WDY, YGD",0,11,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",3,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","GDO, WPS, YGY",0,9,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",4,"SWB, SYO","GOS, PBWorPWB, RBT, SYR","GNG, PDN, SDR, SDT, SSS",2,11,0.182
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",5,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","GPB, ROW, SPW, WNP, WPB, YOD",0,12,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",6,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","GTP, SOG, SPT, WPG, YPS",0,11,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",7,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","NRO, NSS, WPD, YDT, YWS",0,11,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",8,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","PND, RNO",0,8,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",9,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","RGT, SGB, STT",0,9,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",10,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","RTT, WYD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",11,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","SDO, SWT",0,8,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",12,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","SNR (was SNO), WNS, YDW",0,9,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",13,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","WOG, WSY, YBN",0,9,0
+"Fall 2025 Pre-Nesting_Communities",5,"Summer 2026 Post-Fledging_Communities",14,"","GOS, PBWorPWB, RBT, SWB, SYO, SYR","YSR, RDO",0,8,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",1,"","PBP (was PBB), PNL","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,8,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",2,"","PBP (was PBB), PNL","GBO (was GPT), GPW, GSN, WDY, YGD",0,7,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",3,"","PBP (was PBB), PNL","GDO, WPS, YGY",0,5,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",4,"","PBP (was PBB), PNL","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,9,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",5,"","PBP (was PBB), PNL","GPB, ROW, SPW, WNP, WPB, YOD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",6,"","PBP (was PBB), PNL","GTP, SOG, SPT, WPG, YPS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",7,"","PBP (was PBB), PNL","NRO, NSS, WPD, YDT, YWS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",8,"","PBP (was PBB), PNL","PND, RNO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",9,"","PBP (was PBB), PNL","RGT, SGB, STT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",10,"","PBP (was PBB), PNL","RTT, WYD",0,4,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",11,"","PBP (was PBB), PNL","SDO, SWT",0,4,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",12,"","PBP (was PBB), PNL","SNR (was SNO), WNS, YDW",0,5,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",13,"","PBP (was PBB), PNL","WOG, WSY, YBN",0,5,0
+"Fall 2025 Pre-Nesting_Communities",6,"Summer 2026 Post-Fledging_Communities",14,"","PBP (was PBB), PNL","YSR, RDO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",1,"","PLS, RTP, YPS","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,9,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",2,"","PLS, RTP, YPS","GBO (was GPT), GPW, GSN, WDY, YGD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",3,"","PLS, RTP, YPS","GDO, WPS, YGY",0,6,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",4,"","PLS, RTP, YPS","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,10,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",5,"","PLS, RTP, YPS","GPB, ROW, SPW, WNP, WPB, YOD",0,9,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",6,"YPS","PLS, RTP","GTP, SOG, SPT, WPG",1,7,0.143
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",7,"","PLS, RTP, YPS","NRO, NSS, WPD, YDT, YWS",0,8,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",8,"","PLS, RTP, YPS","PND, RNO",0,5,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",9,"","PLS, RTP, YPS","RGT, SGB, STT",0,6,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",10,"","PLS, RTP, YPS","RTT, WYD",0,5,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",11,"","PLS, RTP, YPS","SDO, SWT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",12,"","PLS, RTP, YPS","SNR (was SNO), WNS, YDW",0,6,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",13,"","PLS, RTP, YPS","WOG, WSY, YBN",0,6,0
+"Fall 2025 Pre-Nesting_Communities",7,"Summer 2026 Post-Fledging_Communities",14,"","PLS, RTP, YPS","YSR, RDO",0,5,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",1,"","PND, GDW (wasGYW)","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,8,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",2,"","PND, GDW (wasGYW)","GBO (was GPT), GPW, GSN, WDY, YGD",0,7,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",3,"","PND, GDW (wasGYW)","GDO, WPS, YGY",0,5,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",4,"","PND, GDW (wasGYW)","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,9,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",5,"","PND, GDW (wasGYW)","GPB, ROW, SPW, WNP, WPB, YOD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",6,"","PND, GDW (wasGYW)","GTP, SOG, SPT, WPG, YPS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",7,"","PND, GDW (wasGYW)","NRO, NSS, WPD, YDT, YWS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",8,"PND","GDW (wasGYW)","RNO",1,3,0.333
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",9,"","PND, GDW (wasGYW)","RGT, SGB, STT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",10,"","PND, GDW (wasGYW)","RTT, WYD",0,4,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",11,"","PND, GDW (wasGYW)","SDO, SWT",0,4,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",12,"","PND, GDW (wasGYW)","SNR (was SNO), WNS, YDW",0,5,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",13,"","PND, GDW (wasGYW)","WOG, WSY, YBN",0,5,0
+"Fall 2025 Pre-Nesting_Communities",8,"Summer 2026 Post-Fledging_Communities",14,"","PND, GDW (wasGYW)","YSR, RDO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",1,"","PNW, SOG, SOT, YDP","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,10,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",2,"","PNW, SOG, SOT, YDP","GBO (was GPT), GPW, GSN, WDY, YGD",0,9,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",3,"","PNW, SOG, SOT, YDP","GDO, WPS, YGY",0,7,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",4,"","PNW, SOG, SOT, YDP","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,11,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",5,"","PNW, SOG, SOT, YDP","GPB, ROW, SPW, WNP, WPB, YOD",0,10,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",6,"SOG","PNW, SOT, YDP","GTP, SPT, WPG, YPS",1,8,0.125
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",7,"","PNW, SOG, SOT, YDP","NRO, NSS, WPD, YDT, YWS",0,9,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",8,"","PNW, SOG, SOT, YDP","PND, RNO",0,6,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",9,"","PNW, SOG, SOT, YDP","RGT, SGB, STT",0,7,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",10,"","PNW, SOG, SOT, YDP","RTT, WYD",0,6,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",11,"","PNW, SOG, SOT, YDP","SDO, SWT",0,6,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",12,"","PNW, SOG, SOT, YDP","SNR (was SNO), WNS, YDW",0,7,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",13,"","PNW, SOG, SOT, YDP","WOG, WSY, YBN",0,7,0
+"Fall 2025 Pre-Nesting_Communities",9,"Summer 2026 Post-Fledging_Communities",14,"","PNW, SOG, SOT, YDP","YSR, RDO",0,6,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",1,"","RBP, RSD, SYT","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,9,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",2,"","RBP, RSD, SYT","GBO (was GPT), GPW, GSN, WDY, YGD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",3,"","RBP, RSD, SYT","GDO, WPS, YGY",0,6,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",4,"","RBP, RSD, SYT","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,10,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",5,"","RBP, RSD, SYT","GPB, ROW, SPW, WNP, WPB, YOD",0,9,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",6,"","RBP, RSD, SYT","GTP, SOG, SPT, WPG, YPS",0,8,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",7,"","RBP, RSD, SYT","NRO, NSS, WPD, YDT, YWS",0,8,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",8,"","RBP, RSD, SYT","PND, RNO",0,5,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",9,"","RBP, RSD, SYT","RGT, SGB, STT",0,6,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",10,"","RBP, RSD, SYT","RTT, WYD",0,5,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",11,"","RBP, RSD, SYT","SDO, SWT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",12,"","RBP, RSD, SYT","SNR (was SNO), WNS, YDW",0,6,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",13,"","RBP, RSD, SYT","WOG, WSY, YBN",0,6,0
+"Fall 2025 Pre-Nesting_Communities",10,"Summer 2026 Post-Fledging_Communities",14,"","RBP, RSD, SYT","YSR, RDO",0,5,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",1,"","RGT, SGB, STT, YPW","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,10,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",2,"","RGT, SGB, STT, YPW","GBO (was GPT), GPW, GSN, WDY, YGD",0,9,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",3,"","RGT, SGB, STT, YPW","GDO, WPS, YGY",0,7,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",4,"","RGT, SGB, STT, YPW","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,11,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",5,"","RGT, SGB, STT, YPW","GPB, ROW, SPW, WNP, WPB, YOD",0,10,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",6,"","RGT, SGB, STT, YPW","GTP, SOG, SPT, WPG, YPS",0,9,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",7,"","RGT, SGB, STT, YPW","NRO, NSS, WPD, YDT, YWS",0,9,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",8,"","RGT, SGB, STT, YPW","PND, RNO",0,6,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",9,"RGT, SGB, STT","YPW","",3,4,0.75
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",10,"","RGT, SGB, STT, YPW","RTT, WYD",0,6,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",11,"","RGT, SGB, STT, YPW","SDO, SWT",0,6,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",12,"","RGT, SGB, STT, YPW","SNR (was SNO), WNS, YDW",0,7,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",13,"","RGT, SGB, STT, YPW","WOG, WSY, YBN",0,7,0
+"Fall 2025 Pre-Nesting_Communities",11,"Summer 2026 Post-Fledging_Communities",14,"","RGT, SGB, STT, YPW","YSR, RDO",0,6,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",1,"","ROR, ROY, SWS, WBO","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,10,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",2,"","ROR, ROY, SWS, WBO","GBO (was GPT), GPW, GSN, WDY, YGD",0,9,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",3,"","ROR, ROY, SWS, WBO","GDO, WPS, YGY",0,7,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",4,"","ROR, ROY, SWS, WBO","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,11,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",5,"","ROR, ROY, SWS, WBO","GPB, ROW, SPW, WNP, WPB, YOD",0,10,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",6,"","ROR, ROY, SWS, WBO","GTP, SOG, SPT, WPG, YPS",0,9,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",7,"","ROR, ROY, SWS, WBO","NRO, NSS, WPD, YDT, YWS",0,9,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",8,"","ROR, ROY, SWS, WBO","PND, RNO",0,6,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",9,"","ROR, ROY, SWS, WBO","RGT, SGB, STT",0,7,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",10,"","ROR, ROY, SWS, WBO","RTT, WYD",0,6,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",11,"","ROR, ROY, SWS, WBO","SDO, SWT",0,6,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",12,"","ROR, ROY, SWS, WBO","SNR (was SNO), WNS, YDW",0,7,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",13,"","ROR, ROY, SWS, WBO","WOG, WSY, YBN",0,7,0
+"Fall 2025 Pre-Nesting_Communities",12,"Summer 2026 Post-Fledging_Communities",14,"","ROR, ROY, SWS, WBO","YSR, RDO",0,6,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",1,"","RRD, RRR, RRY, SDO, SWT","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,11,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",2,"","RRD, RRR, RRY, SDO, SWT","GBO (was GPT), GPW, GSN, WDY, YGD",0,10,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",3,"","RRD, RRR, RRY, SDO, SWT","GDO, WPS, YGY",0,8,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",4,"","RRD, RRR, RRY, SDO, SWT","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,12,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",5,"","RRD, RRR, RRY, SDO, SWT","GPB, ROW, SPW, WNP, WPB, YOD",0,11,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",6,"","RRD, RRR, RRY, SDO, SWT","GTP, SOG, SPT, WPG, YPS",0,10,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",7,"","RRD, RRR, RRY, SDO, SWT","NRO, NSS, WPD, YDT, YWS",0,10,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",8,"","RRD, RRR, RRY, SDO, SWT","PND, RNO",0,7,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",9,"","RRD, RRR, RRY, SDO, SWT","RGT, SGB, STT",0,8,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",10,"","RRD, RRR, RRY, SDO, SWT","RTT, WYD",0,7,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",11,"SDO, SWT","RRD, RRR, RRY","",2,5,0.4
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",12,"","RRD, RRR, RRY, SDO, SWT","SNR (was SNO), WNS, YDW",0,8,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",13,"","RRD, RRR, RRY, SDO, SWT","WOG, WSY, YBN",0,8,0
+"Fall 2025 Pre-Nesting_Communities",13,"Summer 2026 Post-Fledging_Communities",14,"","RRD, RRR, RRY, SDO, SWT","YSR, RDO",0,7,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",1,"","WBT, YWD","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,8,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",2,"","WBT, YWD","GBO (was GPT), GPW, GSN, WDY, YGD",0,7,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",3,"","WBT, YWD","GDO, WPS, YGY",0,5,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",4,"","WBT, YWD","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,9,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",5,"","WBT, YWD","GPB, ROW, SPW, WNP, WPB, YOD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",6,"","WBT, YWD","GTP, SOG, SPT, WPG, YPS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",7,"","WBT, YWD","NRO, NSS, WPD, YDT, YWS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",8,"","WBT, YWD","PND, RNO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",9,"","WBT, YWD","RGT, SGB, STT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",10,"","WBT, YWD","RTT, WYD",0,4,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",11,"","WBT, YWD","SDO, SWT",0,4,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",12,"","WBT, YWD","SNR (was SNO), WNS, YDW",0,5,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",13,"","WBT, YWD","WOG, WSY, YBN",0,5,0
+"Fall 2025 Pre-Nesting_Communities",14,"Summer 2026 Post-Fledging_Communities",14,"","WBT, YWD","YSR, RDO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",1,"","WOG, WSY, YBN","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,9,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",2,"","WOG, WSY, YBN","GBO (was GPT), GPW, GSN, WDY, YGD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",3,"","WOG, WSY, YBN","GDO, WPS, YGY",0,6,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",4,"","WOG, WSY, YBN","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,10,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",5,"","WOG, WSY, YBN","GPB, ROW, SPW, WNP, WPB, YOD",0,9,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",6,"","WOG, WSY, YBN","GTP, SOG, SPT, WPG, YPS",0,8,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",7,"","WOG, WSY, YBN","NRO, NSS, WPD, YDT, YWS",0,8,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",8,"","WOG, WSY, YBN","PND, RNO",0,5,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",9,"","WOG, WSY, YBN","RGT, SGB, STT",0,6,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",10,"","WOG, WSY, YBN","RTT, WYD",0,5,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",11,"","WOG, WSY, YBN","SDO, SWT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",12,"","WOG, WSY, YBN","SNR (was SNO), WNS, YDW",0,6,0
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",13,"WOG, WSY, YBN","","",3,3,1
+"Fall 2025 Pre-Nesting_Communities",15,"Summer 2026 Post-Fledging_Communities",14,"","WOG, WSY, YBN","YSR, RDO",0,5,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",1,"","WWB, YDW","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,8,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",2,"","WWB, YDW","GBO (was GPT), GPW, GSN, WDY, YGD",0,7,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",3,"","WWB, YDW","GDO, WPS, YGY",0,5,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",4,"","WWB, YDW","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,9,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",5,"","WWB, YDW","GPB, ROW, SPW, WNP, WPB, YOD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",6,"","WWB, YDW","GTP, SOG, SPT, WPG, YPS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",7,"","WWB, YDW","NRO, NSS, WPD, YDT, YWS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",8,"","WWB, YDW","PND, RNO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",9,"","WWB, YDW","RGT, SGB, STT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",10,"","WWB, YDW","RTT, WYD",0,4,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",11,"","WWB, YDW","SDO, SWT",0,4,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",12,"YDW","WWB","SNR (was SNO), WNS",1,4,0.25
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",13,"","WWB, YDW","WOG, WSY, YBN",0,5,0
+"Fall 2025 Pre-Nesting_Communities",16,"Summer 2026 Post-Fledging_Communities",14,"","WWB, YDW","YSR, RDO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",1,"","YDT, YWS","CRY, GDN (was GDY), GPR, WDD, YRP, YYN (was YNO)",0,8,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",2,"","YDT, YWS","GBO (was GPT), GPW, GSN, WDY, YGD",0,7,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",3,"","YDT, YWS","GDO, WPS, YGY",0,5,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",4,"","YDT, YWS","GNG, PDN, SDR, SDT, SSS, SWB, SYO",0,9,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",5,"","YDT, YWS","GPB, ROW, SPW, WNP, WPB, YOD",0,8,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",6,"","YDT, YWS","GTP, SOG, SPT, WPG, YPS",0,7,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",7,"YDT, YWS","","NRO, NSS, WPD",2,5,0.4
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",8,"","YDT, YWS","PND, RNO",0,4,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",9,"","YDT, YWS","RGT, SGB, STT",0,5,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",10,"","YDT, YWS","RTT, WYD",0,4,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",11,"","YDT, YWS","SDO, SWT",0,4,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",12,"","YDT, YWS","SNR (was SNO), WNS, YDW",0,5,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",13,"","YDT, YWS","WOG, WSY, YBN",0,5,0
+"Fall 2025 Pre-Nesting_Communities",17,"Summer 2026 Post-Fledging_Communities",14,"","YDT, YWS","YSR, RDO",0,4,0
