@@ -595,9 +595,28 @@ dev.off() #turn off print
 
 
 
+# Quick proof of concept for Gaussian (mclust)
 
+library(mclust)
 
+# Louvain
+louvain_membership <- membership(communities)
 
+# Mclust
+mclust_result <- Mclust(adj_matrix)
+mclust_membership <- mclust_result$classification
 
+# Put them together
+comparison <- data.frame(
+  Bird = names(louvain_membership),
+  Louvain = louvain_membership,
+  Mclust = mclust_membership[names(louvain_membership)]
+)
+
+write.csv(
+  comparison,
+  "Louvain_vs_Mclust.csv",
+  row.names = FALSE
+)
 
 
