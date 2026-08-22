@@ -4,25 +4,25 @@
 
 #Also, look have the dates the dataset covers at the ready... you will have to input them
 
-# How is this code different than the (many) Previous versons
+# How is this code different than the (many) Previous versions
   # This code is based in this example- very explicitly
   # https://dshizuka.github.io/networkanalysis/example_RFID_to_Networks.html
     # "This method improves on the alternative, which would be to simply set an arbitrary time window" (what we did )
     # and assign birds that show up within such time windows to be part of the same flock" (we added a clustering code to avoid this... but we are starting w/ lower quality data due to the cut-off)
     # (i.e., saying “birds that come to the feeder within 5 minutes of each other are part of the same flock”)"
   #This new code uses an algorithm to assess the probability of each individual interaction resulting from a social grouping. 
-    # It does the clustering and networking concurrently, without any sort of cleaning cut offs
+    # It looks at the big picture to decide if an interaction is likely to be informative
 
 
 
 ########### The easiest way to run this code is to:
-#Select all (Mac: Command +A)
+#Select all (Mac: Command + A)
 #Press run (Top right of script panel)
 #The code has built-in prompts that will ask you to select and name files
-# Each run will make two file outputs: the plot PDF and the Community assignment csv
+# Each run will make two file outputs: the plot PDF and the Community assignment csv (other files are made and saved along the way, but are not independently analyzable)
 #the files will be saved to your working directory
 # If you need to find your Working Directory type: getwd() into the console
-# Need to change your Working DIrectory?
+# Need to change your Working Directory?
 # Click Session in the top menu bar.
 # Hover over Set Working Directory.
 # Click "Choose Directory"....Select your folder and click Open. OR choose "To Source File Location" to set it to the folder where your active script is saved.
@@ -46,7 +46,6 @@ compiled_data <- read_csv(file.choose()) # pick data file you wish to graph
 datastream=compiled_data %>% 
   select(RFID, Feeder, DateTime, ColorCombo) %>%
   filter(ColorCombo!="NA") %>%
- # mutate(datetime=mdy_hms(DateTime)) %>% (our datetime is alredy fomated... I am quite sure... it looks right...)
   mutate(time_num=as.numeric(DateTime)) %>%
   select(ColorCombo, Feeder, DateTime, time_num)
 
@@ -109,7 +108,7 @@ for(i in 1:length(use_dates)){
 # note, "run it in parallel" step in tutorial skiped b/c I have patience and don't trust my computer not to explode if I ask it to multitask ...
   # but, if you have a big datafile and less time, refer to step 4.6 in the tutorial 
 
-####v Create Networks ####
+#### Create Networks ####
 
 # make list of each day's file
 gmm_filename_full=list.files("gmm_daily", full.names = T)
@@ -285,7 +284,6 @@ data.frame(name = V(g)$name,
 data.frame(name = V(g)$name,
            age = age_lookup[V(g)$name])
 
-#NEW###########################################################
 # Detect social communities
 
 communities <- cluster_louvain(g)
@@ -323,13 +321,13 @@ if (is.null(plot_title) || plot_title == "") {
   plot_title <- "Platoon Bird Co-occurrence Network"
 }
 
-####Make plot w/in R to check components - will be crowded ####
+#### plot w/in R to check components - will be crowded ####
 plot(g,
      layout = layout_with_fr(g), #clasic layout
      vertex.color = V(g)$color,   # use the colors we assigned
      ,           #put nothing, keep labels
      vertex.size = 25,            # adjust node size
-     edge.width = E(g)$weight/5,    # edge width proportional to weight
+     edge.width = E(g)$weight,    # edge width proportional to weight
      edge.color = "black",
      # Add translucent community clouds
      mark.groups = communities,
@@ -379,7 +377,7 @@ timestamp <- format(Sys.time(), "%Y-%m-%d_%H-%M-%S")
 
 # Create the filename
 pdf_name <- sprintf(
-  "%s_%s_%dsec.pdf",
+  "%s_%s.pdf",
   timestamp,
   plot_description
 )
@@ -406,7 +404,7 @@ if (!file.exists(layout_file)) {
     g,
     weights = E(g)$weight,
     niter = 8000,
-    area = vcount(g)^6
+    area = vcount(g)^2 * 10
   )
   
 } else {
@@ -470,9 +468,10 @@ if (!file.exists(layout_file)) {
   
   layout_spread <- layout_with_fr(
     g,
-    weights = E(g)$weight / 1000, #strength of edge weights- divide by LARGER number to decrease pull of strong edges
+    coords = start_layout,
+    weights = E(g)$weight, #strength of edge weights- divide by LARGER number to decrease pull of strong edges
     niter = 20000,    # number of iterations -  larger number lets the network settle/optimize
-    area = vcount(g)^7 #increases the plot area- increases the repulsive force and usually gives a cleaner layout without changing the overall structure.
+    area = vcount(g)^2 * 10 #increases the plot area- increases the repulsive force and usually gives a cleaner layout without changing the overall structure.
   )
   
   #stretch everything out, use as backup if things get very crouded 
@@ -500,6 +499,19 @@ write.csv(
 old_layout <- layout_df
 stopifnot( nrow(old_layout) == length(unique(old_layout$Bird)))
 
+
+# make the edge weights visable 
+edge_weights <- E(g)$weight
+
+edge_widths <- 0.5 + 8 * (
+  edge_weights - min(edge_weights)
+) / (
+  max(edge_weights) - min(edge_weights)
+)
+
+
+
+#create plot
 plot(g,
      layout = layout_spread,    # layout style
      vertex.color = V(g)$color, # use the colors we assigned- sex
@@ -508,7 +520,7 @@ plot(g,
      vertex.size = 8,           # adjust node size
      vertex.frame.color = V(g)$frame.color,  # age border color
      vertex.frame.width = 2,                 # border thickness
-     edge.width = E(g)$weight/5,             # edge width proportional to weight
+     edge.width = edge_widths,             # edge width proportional to weight
      edge.color = "black", #edges will be black                
      edge.curved = FALSE,   # forces straight edges
      mark.groups = communities,
