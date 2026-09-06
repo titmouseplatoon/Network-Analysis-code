@@ -19,7 +19,7 @@
 #Select all (Mac: Command + A)
 #Press run (Top right of script panel)
 #The code has built-in prompts that will ask you to select and name files
-# Each run will make two file outputs: the plot PDF and the Community assignment csv (other files are made and saved along the way, but are not independently analyzable)
+# Each run will make two file outputs: the plot PDF and the Community assignment csv (other files are made and saved along the way - KEEP THEM they can be analyzed later)
 #the files will be saved to your working directory
 # If you need to find your Working Directory type: getwd() into the console
 # Need to change your Working Directory?
