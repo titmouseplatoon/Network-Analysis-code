@@ -110,10 +110,21 @@ for(i in 1:length(use_dates)){
 
 #### Create Networks ####
 
-# make list of each day's file
-gmm_filename_full=list.files("gmm_daily", full.names = T)
-gmm_filename_short=list.files("gmm_daily", full.names = F)
-gmm_list=list()
+# make list of ALL GMM files
+all_gmm_files <- list.files(
+  "gmm_daily/",
+  full.names = TRUE
+)
+
+# Keep ONLY files whose date is in the selected date range
+gmm_filename_full <- all_gmm_files[
+  basename(all_gmm_files) %in%
+    paste0("gmm_", use_dates, ".rdata")
+]
+
+gmm_filename_short <- basename(gmm_filename_full)
+
+gmm_list <- list()
 
 
 # create group by indiv. matrix for each day

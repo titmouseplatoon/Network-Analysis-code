@@ -1,10 +1,11 @@
-# To Run This code you will need some of the intermediary outputs from "Gaussian_Plot_Script.R", and the original merged data CSV that you ran through the Gaussian plotting softwhere
-  # ensure you have the "gmm_daily" folder saved in your working directory 
+# To Run This code you will need some of the intermediary outputs from "Gaussian_Plot_Script.R", 
+  #and the original merged data CSV that you ran through the Gaussian plotting software
+  # ensure you have the "gmm_daily" folder (intermediate output) saved in your working directory 
     # gmm_daily should ALREDY have the datafiles from all the dates you are interested in. 
 
 #Also, look have the dates the dataset covers at the ready... you will have to input them
 
-# The full explanaiton for these stats can be found here:
+# The full explanation for these stats can be found here:
 # https://dshizuka.github.io/networkanalysis/07_mrqap.html
   # "The Multiple Regression Quadratic Assignment Procedure (MRQAP) 
   # is an extension of this approach to allow for multiple covariate matrices (Krackhardt 1988). 
@@ -16,7 +17,7 @@
 #Select all (Mac: Command + A)
 #Press run (Top right of script panel)
 #The code has built-in prompts that will ask you to select and name files
-#*****# Each run will make two file outputs: 
+#This code has NO SAVED OUTPUTS - you will have to manually copy the stats out of the console
 #the files will be saved to your working directory
 
 ######## NOTE!!!!!!
@@ -28,7 +29,7 @@
 # Click "Choose Directory"....Select your folder and click Open. OR choose "To Source File Location" to set it to the folder where your active script is saved.
 
 #Questions? Email me!
-# This combines two of my favorete things! Birds and Stats!!!!!
+# This combines two of my favorite things! Birds and Stats!!!!!
 #(Hannah Baetge) hlbaetge@gmail.com
 
 library(igraph)
@@ -351,4 +352,9 @@ netlm(m1, m3, mode="graph", nullhyp="qap", test.statistic="t-value")
 #### Sex & Age influence test ####
 #test the effect of m2 on m1, controlling for m3. sna package function.
 netlm(m1_both, m2_both+m3_both, mode="graph", nullhyp="qap", test.statistic="t-value")
+
+
+#### Undirected test ####
+#test the effect of m2 on m1 controlling for m3, and effect of m3 on m1, controlling for m2. asnipe package function.
+mrqap.dsp(m1_both~m2_both+m3_both, directed="undirected")
 
