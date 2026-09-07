@@ -1,0 +1,188 @@
+"Season1","Community1","Season2","Community2","SharedBirds","LostBirds","GainedBirds","Shared","Union","Jaccard"
+"04-05 2026_Communities",1,"Summer 2026_Communities",1,"","SWT, SDO, WPW","CGN, PNW, YDP, SOT, SOG",0,8,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",2,"SWT, SDO","WPW","RRY, RRR, RRD",2,6,0.333
+"04-05 2026_Communities",1,"Summer 2026_Communities",3,"","SWT, SDO, WPW","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,12,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",4,"","SWT, SDO, WPW","YWD, WBT",0,5,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",5,"","SWT, SDO, WPW","PLS, YPS, RTP",0,6,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",6,"","SWT, SDO, WPW","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,10,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",7,"","SWT, SDO, WPW","YWS, YDT",0,5,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",8,"","SWT, SDO, WPW","YDD",0,4,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",9,"","SWT, SDO, WPW","YSR",0,4,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",10,"","SWT, SDO, WPW","GDW (wasGYW), PND, PNG, PNP",0,7,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",11,"","SWT, SDO, WPW","YOP, ROO",0,5,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",12,"","SWT, SDO, WPW","RLB",0,4,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",13,"","SWT, SDO, WPW","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,11,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",14,"","SWT, SDO, WPW","ROY, WBO, ROR, SWS",0,7,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",15,"","SWT, SDO, WPW","WWD, SRP, GNT, WDN, WDW",0,8,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",16,"","SWT, SDO, WPW","STT, SGB, RGT, YPW",0,7,0
+"04-05 2026_Communities",1,"Summer 2026_Communities",17,"","SWT, SDO, WPW","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,10,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",1,"CGN","GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","PNW, YDP, SOT, SOG",1,13,0.077
+"04-05 2026_Communities",2,"Summer 2026_Communities",2,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","RRY, SDO, RRR, RRD, SWT",0,14,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",3,"SYO, RBP, SWB","CGN, GNG, SDR, SSS, PDN, SDT","GOS, RSD, SYT, PBWorPWB, RBT, SYR",3,15,0.2
+"04-05 2026_Communities",2,"Summer 2026_Communities",4,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","YWD, WBT",0,11,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",5,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","PLS, YPS, RTP",0,12,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",6,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,16,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",7,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","YWS, YDT",0,11,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",8,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","YDD",0,10,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",9,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","YSR",0,10,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",10,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","GDW (wasGYW), PND, PNG, PNP",0,13,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",11,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","YOP, ROO",0,11,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",12,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","RLB",0,10,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",13,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,17,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",14,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","ROY, WBO, ROR, SWS",0,13,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",15,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","WWD, SRP, GNT, WDN, WDW",0,14,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",16,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","STT, SGB, RGT, YPW",0,13,0
+"04-05 2026_Communities",2,"Summer 2026_Communities",17,"","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,16,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",1,"SOG","GTP, YPS, SPT, PLS, NOD, WPG","CGN, PNW, YDP, SOT",1,11,0.091
+"04-05 2026_Communities",3,"Summer 2026_Communities",2,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","RRY, SDO, RRR, RRD, SWT",0,12,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",3,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,16,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",4,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","YWD, WBT",0,9,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",5,"YPS, PLS","SOG, GTP, SPT, NOD, WPG","RTP",2,8,0.25
+"04-05 2026_Communities",3,"Summer 2026_Communities",6,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,14,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",7,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","YWS, YDT",0,9,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",8,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","YDD",0,8,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",9,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","YSR",0,8,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",10,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","GDW (wasGYW), PND, PNG, PNP",0,11,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",11,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","YOP, ROO",0,9,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",12,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","RLB",0,8,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",13,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,15,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",14,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","ROY, WBO, ROR, SWS",0,11,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",15,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","WWD, SRP, GNT, WDN, WDW",0,12,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",16,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","STT, SGB, RGT, YPW",0,11,0
+"04-05 2026_Communities",3,"Summer 2026_Communities",17,"","SOG, GTP, YPS, SPT, PLS, NOD, WPG","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,14,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",1,"","WSY, YBN, WOG","CGN, PNW, YDP, SOT, SOG",0,8,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",2,"","WSY, YBN, WOG","RRY, SDO, RRR, RRD, SWT",0,8,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",3,"","WSY, YBN, WOG","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,12,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",4,"","WSY, YBN, WOG","YWD, WBT",0,5,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",5,"","WSY, YBN, WOG","PLS, YPS, RTP",0,6,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",6,"WSY, YBN, WOG","","WWB, YGD, YDW, GBO (was GPT)",3,7,0.429
+"04-05 2026_Communities",4,"Summer 2026_Communities",7,"","WSY, YBN, WOG","YWS, YDT",0,5,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",8,"","WSY, YBN, WOG","YDD",0,4,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",9,"","WSY, YBN, WOG","YSR",0,4,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",10,"","WSY, YBN, WOG","GDW (wasGYW), PND, PNG, PNP",0,7,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",11,"","WSY, YBN, WOG","YOP, ROO",0,5,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",12,"","WSY, YBN, WOG","RLB",0,4,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",13,"","WSY, YBN, WOG","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,11,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",14,"","WSY, YBN, WOG","ROY, WBO, ROR, SWS",0,7,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",15,"","WSY, YBN, WOG","WWD, SRP, GNT, WDN, WDW",0,8,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",16,"","WSY, YBN, WOG","STT, SGB, RGT, YPW",0,7,0
+"04-05 2026_Communities",4,"Summer 2026_Communities",17,"","WSY, YBN, WOG","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,10,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",1,"","YWS, WPD, YDT, NRO, NSS","CGN, PNW, YDP, SOT, SOG",0,10,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",2,"","YWS, WPD, YDT, NRO, NSS","RRY, SDO, RRR, RRD, SWT",0,10,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",3,"","YWS, WPD, YDT, NRO, NSS","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,14,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",4,"","YWS, WPD, YDT, NRO, NSS","YWD, WBT",0,7,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",5,"","YWS, WPD, YDT, NRO, NSS","PLS, YPS, RTP",0,8,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",6,"","YWS, WPD, YDT, NRO, NSS","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,12,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",7,"YWS, YDT","WPD, NRO, NSS","",2,5,0.4
+"04-05 2026_Communities",5,"Summer 2026_Communities",8,"","YWS, WPD, YDT, NRO, NSS","YDD",0,6,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",9,"","YWS, WPD, YDT, NRO, NSS","YSR",0,6,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",10,"","YWS, WPD, YDT, NRO, NSS","GDW (wasGYW), PND, PNG, PNP",0,9,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",11,"","YWS, WPD, YDT, NRO, NSS","YOP, ROO",0,7,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",12,"","YWS, WPD, YDT, NRO, NSS","RLB",0,6,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",13,"","YWS, WPD, YDT, NRO, NSS","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,13,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",14,"","YWS, WPD, YDT, NRO, NSS","ROY, WBO, ROR, SWS",0,9,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",15,"","YWS, WPD, YDT, NRO, NSS","WWD, SRP, GNT, WDN, WDW",0,10,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",16,"","YWS, WPD, YDT, NRO, NSS","STT, SGB, RGT, YPW",0,9,0
+"04-05 2026_Communities",5,"Summer 2026_Communities",17,"","YWS, WPD, YDT, NRO, NSS","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,12,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",1,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","CGN, PNW, YDP, SOT, SOG",0,15,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",2,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","RRY, SDO, RRR, RRD, SWT",0,15,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",3,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,19,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",4,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","YWD, WBT",0,12,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",5,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","PLS, YPS, RTP",0,13,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",6,"YDW, GBO (was GPT), YGD","WNS, SNR (was SNO), GPW, WDY, GSN, YSR, RDO","YBN, WOG, WSY, WWB",3,14,0.214
+"04-05 2026_Communities",6,"Summer 2026_Communities",7,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","YWS, YDT",0,12,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",8,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","YDD",0,11,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",9,"YSR","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, RDO","",1,10,0.1
+"04-05 2026_Communities",6,"Summer 2026_Communities",10,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","GDW (wasGYW), PND, PNG, PNP",0,14,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",11,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","YOP, ROO",0,12,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",12,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","RLB",0,11,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",13,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,18,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",14,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","ROY, WBO, ROR, SWS",0,14,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",15,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","WWD, SRP, GNT, WDN, WDW",0,15,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",16,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","STT, SGB, RGT, YPW",0,14,0
+"04-05 2026_Communities",6,"Summer 2026_Communities",17,"","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,17,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",1,"","PND, RNO, PNG, GLS","CGN, PNW, YDP, SOT, SOG",0,9,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",2,"","PND, RNO, PNG, GLS","RRY, SDO, RRR, RRD, SWT",0,9,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",3,"","PND, RNO, PNG, GLS","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,13,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",4,"","PND, RNO, PNG, GLS","YWD, WBT",0,6,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",5,"","PND, RNO, PNG, GLS","PLS, YPS, RTP",0,7,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",6,"","PND, RNO, PNG, GLS","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,11,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",7,"","PND, RNO, PNG, GLS","YWS, YDT",0,6,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",8,"","PND, RNO, PNG, GLS","YDD",0,5,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",9,"","PND, RNO, PNG, GLS","YSR",0,5,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",10,"PND, PNG","RNO, GLS","GDW (wasGYW), PNP",2,6,0.333
+"04-05 2026_Communities",7,"Summer 2026_Communities",11,"","PND, RNO, PNG, GLS","YOP, ROO",0,6,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",12,"","PND, RNO, PNG, GLS","RLB",0,5,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",13,"","PND, RNO, PNG, GLS","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,12,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",14,"","PND, RNO, PNG, GLS","ROY, WBO, ROR, SWS",0,8,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",15,"","PND, RNO, PNG, GLS","WWD, SRP, GNT, WDN, WDW",0,9,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",16,"","PND, RNO, PNG, GLS","STT, SGB, RGT, YPW",0,8,0
+"04-05 2026_Communities",7,"Summer 2026_Communities",17,"","PND, RNO, PNG, GLS","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,11,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",1,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","CGN, PNW, YDP, SOT, SOG",0,12,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",2,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","RRY, SDO, RRR, RRD, SWT",0,12,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",3,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,16,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",4,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","YWD, WBT",0,9,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",5,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","PLS, YPS, RTP",0,10,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",6,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,14,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",7,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","YWS, YDT",0,9,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",8,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","YDD",0,8,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",9,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","YSR",0,8,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",10,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","GDW (wasGYW), PND, PNG, PNP",0,11,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",11,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","YOP, ROO",0,9,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",12,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","RLB",0,8,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",13,"YND","WPB, WNP, SPW, ROW, YOD, GPB","YBT, YBY, YGY, GDO, PBS, PNL, PBP (was PBB)",1,14,0.071
+"04-05 2026_Communities",8,"Summer 2026_Communities",14,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","ROY, WBO, ROR, SWS",0,11,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",15,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","WWD, SRP, GNT, WDN, WDW",0,12,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",16,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","STT, SGB, RGT, YPW",0,11,0
+"04-05 2026_Communities",8,"Summer 2026_Communities",17,"","WPB, WNP, SPW, ROW, YND, YOD, GPB","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,14,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",1,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","CGN, PNW, YDP, SOT, SOG",0,17,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",2,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","RRY, SDO, RRR, RRD, SWT",0,17,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",3,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,21,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",4,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","YWD, WBT",0,14,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",5,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","PLS, YPS, RTP",0,15,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",6,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,19,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",7,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","YWS, YDT",0,14,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",8,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","YDD",0,13,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",9,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","YSR",0,13,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",10,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","GDW (wasGYW), PND, PNG, PNP",0,16,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",11,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","YOP, ROO",0,14,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",12,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","RLB",0,13,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",13,"YBY, YGY, YBT, GDO, PNL, PBP (was PBB)","WPS, WTW, SGB, WDT, RGT, STT","YND, PBS",6,14,0.429
+"04-05 2026_Communities",9,"Summer 2026_Communities",14,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","ROY, WBO, ROR, SWS",0,16,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",15,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","WWD, SRP, GNT, WDN, WDW",0,17,0
+"04-05 2026_Communities",9,"Summer 2026_Communities",16,"SGB, RGT, STT","YBY, YGY, YBT, GDO, WPS, WTW, PNL, WDT, PBP (was PBB)","YPW",3,13,0.231
+"04-05 2026_Communities",9,"Summer 2026_Communities",17,"","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,19,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",1,"","WDB","CGN, PNW, YDP, SOT, SOG",0,6,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",2,"","WDB","RRY, SDO, RRR, RRD, SWT",0,6,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",3,"","WDB","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,10,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",4,"","WDB","YWD, WBT",0,3,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",5,"","WDB","PLS, YPS, RTP",0,4,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",6,"","WDB","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,8,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",7,"","WDB","YWS, YDT",0,3,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",8,"","WDB","YDD",0,2,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",9,"","WDB","YSR",0,2,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",10,"","WDB","GDW (wasGYW), PND, PNG, PNP",0,5,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",11,"","WDB","YOP, ROO",0,3,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",12,"","WDB","RLB",0,2,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",13,"","WDB","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,9,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",14,"","WDB","ROY, WBO, ROR, SWS",0,5,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",15,"","WDB","WWD, SRP, GNT, WDN, WDW",0,6,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",16,"","WDB","STT, SGB, RGT, YPW",0,5,0
+"04-05 2026_Communities",10,"Summer 2026_Communities",17,"","WDB","RTT, WYD, CRY, YYN (was YNO), GDD (was GDR), WDG, GTR",0,8,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",1,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","CGN, PNW, YDP, SOT, SOG",0,14,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",2,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","RRY, SDO, RRR, RRD, SWT",0,14,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",3,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","SYO, GOS, RSD, SYT, PBWorPWB, SWB, RBT, SYR, RBP",0,18,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",4,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","YWD, WBT",0,11,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",5,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","PLS, YPS, RTP",0,12,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",6,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","YBN, WOG, WSY, WWB, YGD, YDW, GBO (was GPT)",0,16,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",7,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","YWS, YDT",0,11,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",8,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","YDD",0,10,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",9,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","YSR",0,10,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",10,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","GDW (wasGYW), PND, PNG, PNP",0,13,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",11,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","YOP, ROO",0,11,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",12,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","RLB",0,10,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",13,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","YBT, YBY, YGY, YND, GDO, PBS, PNL, PBP (was PBB)",0,17,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",14,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","ROY, WBO, ROR, SWS",0,13,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",15,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","WWD, SRP, GNT, WDN, WDW",0,14,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",16,"","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD","STT, SGB, RGT, YPW",0,13,0
+"04-05 2026_Communities",11,"Summer 2026_Communities",17,"RTT, YYN (was YNO), CRY, WDG, WYD","GDN (was GDY), GPR, WDD, YRP","GDD (was GDR), GTR",5,11,0.455

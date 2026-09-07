@@ -1,0 +1,13 @@
+"Season1","Community1","Season2","Community2","SharedBirds","LostBirds","GainedBirds","Shared","Union","Jaccard"
+"Pre Nesting 09-10 2025_Communities",1,"04-05 2026_Communities",3,"SOG","CGN, PNW, YDP, SOT","GTP, YPS, SPT, PLS, NOD, WPG",1,11,0.091
+"Pre Nesting 09-10 2025_Communities",2,"04-05 2026_Communities",1,"SDO, SWT","RRY, RRR, RRD","WPW",2,6,0.333
+"Pre Nesting 09-10 2025_Communities",3,"04-05 2026_Communities",2,"SYO, SWB, RBP","GOS, RSD, SYT, PBWorPWB, RBT, SYR","CGN, GNG, SDR, SSS, PDN, SDT",3,15,0.2
+"Pre Nesting 09-10 2025_Communities",5,"04-05 2026_Communities",3,"PLS, YPS","RTP","SOG, GTP, SPT, NOD, WPG",2,8,0.25
+"Pre Nesting 09-10 2025_Communities",6,"04-05 2026_Communities",4,"YBN, WOG, WSY","WWB, YGD, YDW, GBO (was GPT)","",3,7,0.429
+"Pre Nesting 09-10 2025_Communities",7,"04-05 2026_Communities",5,"YWS, YDT","","WPD, NRO, NSS",2,5,0.4
+"Pre Nesting 09-10 2025_Communities",9,"04-05 2026_Communities",6,"YSR","","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, RDO",1,10,0.1
+"Pre Nesting 09-10 2025_Communities",10,"04-05 2026_Communities",7,"PND, PNG","GDW (wasGYW), PNP","RNO, GLS",2,6,0.333
+"Pre Nesting 09-10 2025_Communities",13,"04-05 2026_Communities",9,"YBT, YBY, YGY, GDO","ROY, WBO, ROR, SWS, YND, PBS","WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",4,18,0.222
+"Pre Nesting 09-10 2025_Communities",14,"04-05 2026_Communities",9,"PNL, PBP (was PBB)","","YBY, YGY, YBT, GDO, WPS, WTW, SGB, WDT, RGT, STT",2,12,0.167
+"Pre Nesting 09-10 2025_Communities",16,"04-05 2026_Communities",9,"STT, SGB, RGT","YPW","YBY, YGY, YBT, GDO, WPS, WTW, PNL, WDT, PBP (was PBB)",3,13,0.231
+"Pre Nesting 09-10 2025_Communities",17,"04-05 2026_Communities",11,"RTT, WYD, CRY, YYN (was YNO), WDG","GDD (was GDR), GTR","GDN (was GDY), GPR, WDD, YRP",5,11,0.455

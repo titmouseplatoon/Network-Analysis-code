@@ -1,6 +1,6 @@
 #This is not a Stand-alone code. 
 # these statistical analysis codes to analyze g
-  #g is the graphical data set made BUT NOT SAVED by the plot code (V1 or V2)
+  #g is the graphical data set made BUT NOT SAVED by the plot code (V1 or V2 or Vn)
 # these stats are to be run at the end of making a plot to analyze it 
 
 

@@ -59,6 +59,17 @@ all_ids=datastream %>%
   unique() #just get the unique numbers 
 all_ids
 
+
+cat("\n============================\n")
+cat("NUMBER OF BIRDS IN RAW DATA:\n")
+print(length(unique(compiled_data$ColorCombo)))
+
+cat("\nNUMBER OF BIRDS IN all_ids:\n")
+print(length(all_ids))
+
+cat("\n============================\n")
+
+
 #### Divide Data into days ####
 
 #enter start and end date of dataset
@@ -295,7 +306,7 @@ data.frame(name = V(g)$name,
 data.frame(name = V(g)$name,
            age = age_lookup[V(g)$name])
 
-# Detect social communities
+##### Detect social communities ####
 
 communities <- cluster_louvain(g)
 

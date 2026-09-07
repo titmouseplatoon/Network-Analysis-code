@@ -106,6 +106,25 @@ length(community_datasets)
 
 names(community_datasets)
 
+# Temporarily assign standardized names to the selected datasets
+# These DO NOT rename the actual files on your computer
+
+season_names <- c(
+  "Fall 2025 Pre-Nesting_Communities",
+  "Spring 2026 Nesting Period_Communities",
+  "Summer 2026 Post-Fledging_Communities"
+)
+
+names(community_datasets) <- season_names
+
+
+# Check datasets (take 2)
+
+length(community_datasets)
+
+names(community_datasets)
+
+
 
 # Function: Indiv. Bird community movement file creation #######################
 
@@ -211,10 +230,17 @@ bird_flow <- bird_flow %>%
     
   )
 
-# rename communities from numbers to informative
+#### rename communities from numbers to informative ####
+# first, look at "Bird_community_Timeline.csv" and input the exact names of the season
 #$$$ This Needs to be  changed If you are using different data sets
 # the single back-quoted items ( `Fall 2025 Pre-Nesting_Communities`) are the column names form the bird flow dataset
-  
+  #`Fall 2025 Pre-Nesting_Communities` <- `Pre Nesting 09-10 2025_Communities`
+  #`Spring 2026 Nesting Period_Communities` <- `04-05 2026_Communities`
+  #`Summer 2026 Post-Fledging_Communities` <- `Summer 2026_Communities`
+
+
+# Now let the code rename the communities based on the season 
+
   bird_flow <- bird_flow %>%
   
   mutate(

@@ -254,7 +254,11 @@ names(pair_matrices) <- names(community_datasets)
 #
 # Output:
 #   A single ARI value.
-
+#
+# IMPORTANT:
+#   This calculation includes ONLY birds detected in both seasons.
+#   Birds absent from either season are excluded rather than treated
+#   as community changes.
 
 compare_seasons_ARI <- function(df1, df2){
   

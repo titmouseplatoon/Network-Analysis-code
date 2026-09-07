@@ -1,0 +1,160 @@
+"Season1","Community1","Season2","Community2","SharedBirds","LostBirds","GainedBirds","Shared","Union","Jaccard","Source","Target"
+"04-05 2026_Communities",1,"Summer 2026_Communities",2,"SWT, SDO","WPW","RRY, RRR, RRD",2,6,0.333,"Community 1
+n = 3 birds
+SDO
+SWT
+WPW","Community 2
+n = 5 birds
+RRD
+RRR
+RRY
+SDO
+SWT"
+"04-05 2026_Communities",2,"Summer 2026_Communities",3,"SYO, RBP, SWB","CGN, GNG, SDR, SSS, PDN, SDT","GOS, RSD, SYT, PBWorPWB, RBT, SYR",3,15,0.2,"Community 2
+n = 9 birds
+CGN
+GNG
+PDN
+RBP
+SDR
+SDT
+SSS
+SWB
+SYO","Community 3
+n = 9 birds
+GOS
+PBWorPWB
+RBP
+RBT
+RSD
+SWB
+SYO
+SYR
+SYT"
+"04-05 2026_Communities",3,"Summer 2026_Communities",5,"YPS, PLS","SOG, GTP, SPT, NOD, WPG","RTP",2,8,0.25,"Community 3
+n = 7 birds
+GTP
+NOD
+PLS
+SOG
+SPT
+WPG
+YPS","Community 5
+n = 3 birds
+PLS
+RTP
+YPS"
+"04-05 2026_Communities",4,"Summer 2026_Communities",6,"WSY, YBN, WOG","","WWB, YGD, YDW, GBO (was GPT)",3,7,0.429,"Community 4
+n = 3 birds
+WOG
+WSY
+YBN","Community 6
+n = 7 birds
+GBO (was GPT)
+WOG
+WSY
+WWB
+YBN
+YDW
+YGD"
+"04-05 2026_Communities",5,"Summer 2026_Communities",7,"YWS, YDT","WPD, NRO, NSS","",2,5,0.4,"Community 5
+n = 5 birds
+NRO
+NSS
+WPD
+YDT
+YWS","Community 7
+n = 2 birds
+YDT
+YWS"
+"04-05 2026_Communities",6,"Summer 2026_Communities",6,"YDW, GBO (was GPT), YGD","WNS, SNR (was SNO), GPW, WDY, GSN, YSR, RDO","YBN, WOG, WSY, WWB",3,14,0.214,"Community 6
+n = 10 birds
+GBO (was GPT)
+GPW
+GSN
+RDO
+SNR (was SNO)
+WDY
+WNS
+YDW
+YGD
+YSR","Community 6
+n = 7 birds
+GBO (was GPT)
+WOG
+WSY
+WWB
+YBN
+YDW
+YGD"
+"04-05 2026_Communities",7,"Summer 2026_Communities",10,"PND, PNG","RNO, GLS","GDW (wasGYW), PNP",2,6,0.333,"Community 7
+n = 4 birds
+GLS
+PND
+PNG
+RNO","Community 10
+n = 4 birds
+GDW (wasGYW)
+PND
+PNG
+PNP"
+"04-05 2026_Communities",8,"Summer 2026_Communities",13,"YND","WPB, WNP, SPW, ROW, YOD, GPB","YBT, YBY, YGY, GDO, PBS, PNL, PBP (was PBB)",1,14,0.071,"Community 8
+n = 7 birds
+GPB
+ROW
+SPW
+WNP
+WPB
+YND
+YOD","Community 13
+n = 8 birds
+GDO
+PBP (was PBB)
+PBS
+PNL
+YBT
+YBY
+YGY
+YND"
+"04-05 2026_Communities",9,"Summer 2026_Communities",13,"YBY, YGY, YBT, GDO, PNL, PBP (was PBB)","WPS, WTW, SGB, WDT, RGT, STT","YND, PBS",6,14,0.429,"Community 9
+n = 12 birds
+GDO
+PBP (was PBB)
+PNL
+RGT
+SGB
+STT
+WDT
+WPS
+WTW
+YBT
+YBY
+YGY","Community 13
+n = 8 birds
+GDO
+PBP (was PBB)
+PBS
+PNL
+YBT
+YBY
+YGY
+YND"
+"04-05 2026_Communities",11,"Summer 2026_Communities",17,"RTT, YYN (was YNO), CRY, WDG, WYD","GDN (was GDY), GPR, WDD, YRP","GDD (was GDR), GTR",5,11,0.455,"Community 11
+n = 9 birds
+CRY
+GDN (was GDY)
+GPR
+RTT
+WDD
+WDG
+WYD
+YRP
+YYN (was YNO)","Community 17
+n = 7 birds
+CRY
+GDD (was GDR)
+GTR
+RTT
+WDG
+WYD
+YYN (was YNO)"
