@@ -1,0 +1,171 @@
+"Season1","Community1","Season2","Community2","SharedBirds","LostBirds","GainedBirds","Shared","Union","Jaccard","Source","Target"
+"spring_Communities",1,"summer_Communities",3,"SOG, PLS, YPS","CGN, RNG","GTP, SPT, NOD, WPG",3,9,0.333,"Community 1
+n = 5 birds
+CGN
+PLS
+RNG
+SOG
+YPS","Community 3
+n = 7 birds
+GTP
+NOD
+PLS
+SOG
+SPT
+WPG
+YPS"
+"spring_Communities",2,"summer_Communities",1,"SWT, SDO","","WPW",2,3,0.667,"Community 2
+n = 2 birds
+SDO
+SWT","Community 1
+n = 3 birds
+SDO
+SWT
+WPW"
+"spring_Communities",3,"summer_Communities",2,"GNG, PDN, SYO, SWB, RBP","YPN","CGN, SDR, SSS, SDT",5,10,0.5,"Community 3
+n = 6 birds
+GNG
+PDN
+RBP
+SWB
+SYO
+YPN","Community 2
+n = 9 birds
+CGN
+GNG
+PDN
+RBP
+SDR
+SDT
+SSS
+SWB
+SYO"
+"spring_Communities",4,"summer_Communities",4,"WSY, YBN, WOG","WPG","",3,4,0.75,"Community 4
+n = 4 birds
+WOG
+WPG
+WSY
+YBN","Community 4
+n = 3 birds
+WOG
+WSY
+YBN"
+"spring_Communities",5,"summer_Communities",5,"YWS","","WPD, YDT, NRO, NSS",1,5,0.2,"Community 5
+n = 1 birds
+YWS","Community 5
+n = 5 birds
+NRO
+NSS
+WPD
+YDT
+YWS"
+"spring_Communities",6,"summer_Communities",5,"YDT","","YWS, WPD, NRO, NSS",1,5,0.2,"Community 6
+n = 1 birds
+YDT","Community 5
+n = 5 birds
+NRO
+NSS
+WPD
+YDT
+YWS"
+"spring_Communities",7,"summer_Communities",6,"YGD, GBO (was GPT), YDW, WNS","","SNR (was SNO), GPW, WDY, GSN, YSR, RDO",4,10,0.4,"Community 7
+n = 4 birds
+GBO (was GPT)
+WNS
+YDW
+YGD","Community 6
+n = 10 birds
+GBO (was GPT)
+GPW
+GSN
+RDO
+SNR (was SNO)
+WDY
+WNS
+YDW
+YGD
+YSR"
+"spring_Communities",8,"summer_Communities",7,"PND, PNG","YGP, YSR","RNO, GLS",2,6,0.333,"Community 8
+n = 4 birds
+PND
+PNG
+YGP
+YSR","Community 7
+n = 4 birds
+GLS
+PND
+PNG
+RNO"
+"spring_Communities",9,"summer_Communities",8,"ROW, YOD, YND","ROO","WPB, WNP, SPW, GPB",3,8,0.375,"Community 9
+n = 4 birds
+ROO
+ROW
+YND
+YOD","Community 8
+n = 7 birds
+GPB
+ROW
+SPW
+WNP
+WPB
+YND
+YOD"
+"spring_Communities",11,"summer_Communities",9,"YGY, YBY, GDO, YBT, PBP (was PBB)","WDB, GSD, RPP","WPS, WTW, SGB, PNL, WDT, RGT, STT",5,15,0.333,"Community 11
+n = 8 birds
+GDO
+GSD
+PBP (was PBB)
+RPP
+WDB
+YBT
+YBY
+YGY","Community 9
+n = 12 birds
+GDO
+PBP (was PBB)
+PNL
+RGT
+SGB
+STT
+WDT
+WPS
+WTW
+YBT
+YBY
+YGY"
+"spring_Communities",12,"summer_Communities",9,"STT, SGB, RGT","","YBY, YGY, YBT, GDO, WPS, WTW, PNL, WDT, PBP (was PBB)",3,12,0.25,"Community 12
+n = 3 birds
+RGT
+SGB
+STT","Community 9
+n = 12 birds
+GDO
+PBP (was PBB)
+PNL
+RGT
+SGB
+STT
+WDT
+WPS
+WTW
+YBT
+YBY
+YGY"
+"spring_Communities",13,"summer_Communities",11,"GDN (was GDY), YYN (was YNO), RTT, WYD, CRY","YSG","GPR, WDD, WDG, YRP",5,10,0.5,"Community 13
+n = 6 birds
+CRY
+GDN (was GDY)
+RTT
+WYD
+YSG
+YYN (was YNO)","Community 11
+n = 9 birds
+CRY
+GDN (was GDY)
+GPR
+RTT
+WDD
+WDG
+WYD
+YRP
+YYN (was YNO)"

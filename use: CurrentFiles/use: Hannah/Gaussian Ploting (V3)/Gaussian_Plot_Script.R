@@ -306,6 +306,20 @@ data.frame(name = V(g)$name,
 data.frame(name = V(g)$name,
            age = age_lookup[V(g)$name])
 
+
+# describe what data set this is 
+# this is used in title printed on plot 
+plot_title <- rstudioapi::showPrompt(
+  title = "Plot Title",
+  message = "Enter the dataset for this plot (used in title printed on plot):",
+  default = "Platoon Bird Co-occurrence Network"
+)
+# If Cancel is pressed or left blank
+if (is.null(plot_title) || plot_title == "") {
+  plot_title <- "Platoon Bird Co-occurrence Network"
+}
+
+
 ##### Detect social communities ####
 
 communities <- cluster_louvain(g)
@@ -331,17 +345,6 @@ community_colors <- hcl.colors(
   palette = "Dark 3"
 )
 
-# describe what data set this is 
-# this is used in title printed on plot 
-plot_title <- rstudioapi::showPrompt(
-  title = "Plot Title",
-  message = "Enter the dataset for this plot (used in title printed on plot):",
-  default = "Platoon Bird Co-occurrence Network"
-)
-# If Cancel is pressed or left blank
-if (is.null(plot_title) || plot_title == "") {
-  plot_title <- "Platoon Bird Co-occurrence Network"
-}
 
 #### plot w/in R to check components - will be crowded ####
 plot(g,

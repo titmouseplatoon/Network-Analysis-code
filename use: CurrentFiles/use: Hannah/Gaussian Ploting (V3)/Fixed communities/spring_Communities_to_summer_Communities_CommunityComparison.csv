@@ -1,0 +1,144 @@
+"Season1","Community1","Season2","Community2","SharedBirds","LostBirds","GainedBirds","Shared","Union","Jaccard"
+"spring_Communities",1,"summer_Communities",1,"","CGN, RNG, SOG, PLS, YPS","SWT, SDO, WPW",0,8,0
+"spring_Communities",1,"summer_Communities",2,"CGN","RNG, SOG, PLS, YPS","GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",1,13,0.077
+"spring_Communities",1,"summer_Communities",3,"SOG, PLS, YPS","CGN, RNG","GTP, SPT, NOD, WPG",3,9,0.333
+"spring_Communities",1,"summer_Communities",4,"","CGN, RNG, SOG, PLS, YPS","WSY, YBN, WOG",0,8,0
+"spring_Communities",1,"summer_Communities",5,"","CGN, RNG, SOG, PLS, YPS","YWS, WPD, YDT, NRO, NSS",0,10,0
+"spring_Communities",1,"summer_Communities",6,"","CGN, RNG, SOG, PLS, YPS","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,15,0
+"spring_Communities",1,"summer_Communities",7,"","CGN, RNG, SOG, PLS, YPS","PND, RNO, PNG, GLS",0,9,0
+"spring_Communities",1,"summer_Communities",8,"","CGN, RNG, SOG, PLS, YPS","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,12,0
+"spring_Communities",1,"summer_Communities",9,"","CGN, RNG, SOG, PLS, YPS","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,17,0
+"spring_Communities",1,"summer_Communities",10,"","CGN, RNG, SOG, PLS, YPS","WDB",0,6,0
+"spring_Communities",1,"summer_Communities",11,"","CGN, RNG, SOG, PLS, YPS","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,14,0
+"spring_Communities",2,"summer_Communities",1,"SWT, SDO","","WPW",2,3,0.667
+"spring_Communities",2,"summer_Communities",2,"","SWT, SDO","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,11,0
+"spring_Communities",2,"summer_Communities",3,"","SWT, SDO","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,9,0
+"spring_Communities",2,"summer_Communities",4,"","SWT, SDO","WSY, YBN, WOG",0,5,0
+"spring_Communities",2,"summer_Communities",5,"","SWT, SDO","YWS, WPD, YDT, NRO, NSS",0,7,0
+"spring_Communities",2,"summer_Communities",6,"","SWT, SDO","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,12,0
+"spring_Communities",2,"summer_Communities",7,"","SWT, SDO","PND, RNO, PNG, GLS",0,6,0
+"spring_Communities",2,"summer_Communities",8,"","SWT, SDO","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,9,0
+"spring_Communities",2,"summer_Communities",9,"","SWT, SDO","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,14,0
+"spring_Communities",2,"summer_Communities",10,"","SWT, SDO","WDB",0,3,0
+"spring_Communities",2,"summer_Communities",11,"","SWT, SDO","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,11,0
+"spring_Communities",3,"summer_Communities",1,"","GNG, PDN, SYO, SWB, RBP, YPN","SWT, SDO, WPW",0,9,0
+"spring_Communities",3,"summer_Communities",2,"GNG, PDN, SYO, SWB, RBP","YPN","CGN, SDR, SSS, SDT",5,10,0.5
+"spring_Communities",3,"summer_Communities",3,"","GNG, PDN, SYO, SWB, RBP, YPN","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,13,0
+"spring_Communities",3,"summer_Communities",4,"","GNG, PDN, SYO, SWB, RBP, YPN","WSY, YBN, WOG",0,9,0
+"spring_Communities",3,"summer_Communities",5,"","GNG, PDN, SYO, SWB, RBP, YPN","YWS, WPD, YDT, NRO, NSS",0,11,0
+"spring_Communities",3,"summer_Communities",6,"","GNG, PDN, SYO, SWB, RBP, YPN","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,16,0
+"spring_Communities",3,"summer_Communities",7,"","GNG, PDN, SYO, SWB, RBP, YPN","PND, RNO, PNG, GLS",0,10,0
+"spring_Communities",3,"summer_Communities",8,"","GNG, PDN, SYO, SWB, RBP, YPN","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,13,0
+"spring_Communities",3,"summer_Communities",9,"","GNG, PDN, SYO, SWB, RBP, YPN","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,18,0
+"spring_Communities",3,"summer_Communities",10,"","GNG, PDN, SYO, SWB, RBP, YPN","WDB",0,7,0
+"spring_Communities",3,"summer_Communities",11,"","GNG, PDN, SYO, SWB, RBP, YPN","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,15,0
+"spring_Communities",4,"summer_Communities",1,"","WSY, WPG, YBN, WOG","SWT, SDO, WPW",0,7,0
+"spring_Communities",4,"summer_Communities",2,"","WSY, WPG, YBN, WOG","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,13,0
+"spring_Communities",4,"summer_Communities",3,"WPG","WSY, YBN, WOG","SOG, GTP, YPS, SPT, PLS, NOD",1,10,0.1
+"spring_Communities",4,"summer_Communities",4,"WSY, YBN, WOG","WPG","",3,4,0.75
+"spring_Communities",4,"summer_Communities",5,"","WSY, WPG, YBN, WOG","YWS, WPD, YDT, NRO, NSS",0,9,0
+"spring_Communities",4,"summer_Communities",6,"","WSY, WPG, YBN, WOG","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,14,0
+"spring_Communities",4,"summer_Communities",7,"","WSY, WPG, YBN, WOG","PND, RNO, PNG, GLS",0,8,0
+"spring_Communities",4,"summer_Communities",8,"","WSY, WPG, YBN, WOG","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,11,0
+"spring_Communities",4,"summer_Communities",9,"","WSY, WPG, YBN, WOG","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,16,0
+"spring_Communities",4,"summer_Communities",10,"","WSY, WPG, YBN, WOG","WDB",0,5,0
+"spring_Communities",4,"summer_Communities",11,"","WSY, WPG, YBN, WOG","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,13,0
+"spring_Communities",5,"summer_Communities",1,"","YWS","SWT, SDO, WPW",0,4,0
+"spring_Communities",5,"summer_Communities",2,"","YWS","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,10,0
+"spring_Communities",5,"summer_Communities",3,"","YWS","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,8,0
+"spring_Communities",5,"summer_Communities",4,"","YWS","WSY, YBN, WOG",0,4,0
+"spring_Communities",5,"summer_Communities",5,"YWS","","WPD, YDT, NRO, NSS",1,5,0.2
+"spring_Communities",5,"summer_Communities",6,"","YWS","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,11,0
+"spring_Communities",5,"summer_Communities",7,"","YWS","PND, RNO, PNG, GLS",0,5,0
+"spring_Communities",5,"summer_Communities",8,"","YWS","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,8,0
+"spring_Communities",5,"summer_Communities",9,"","YWS","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,13,0
+"spring_Communities",5,"summer_Communities",10,"","YWS","WDB",0,2,0
+"spring_Communities",5,"summer_Communities",11,"","YWS","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,10,0
+"spring_Communities",6,"summer_Communities",1,"","YDT","SWT, SDO, WPW",0,4,0
+"spring_Communities",6,"summer_Communities",2,"","YDT","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,10,0
+"spring_Communities",6,"summer_Communities",3,"","YDT","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,8,0
+"spring_Communities",6,"summer_Communities",4,"","YDT","WSY, YBN, WOG",0,4,0
+"spring_Communities",6,"summer_Communities",5,"YDT","","YWS, WPD, NRO, NSS",1,5,0.2
+"spring_Communities",6,"summer_Communities",6,"","YDT","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,11,0
+"spring_Communities",6,"summer_Communities",7,"","YDT","PND, RNO, PNG, GLS",0,5,0
+"spring_Communities",6,"summer_Communities",8,"","YDT","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,8,0
+"spring_Communities",6,"summer_Communities",9,"","YDT","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,13,0
+"spring_Communities",6,"summer_Communities",10,"","YDT","WDB",0,2,0
+"spring_Communities",6,"summer_Communities",11,"","YDT","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,10,0
+"spring_Communities",7,"summer_Communities",1,"","YGD, GBO (was GPT), YDW, WNS","SWT, SDO, WPW",0,7,0
+"spring_Communities",7,"summer_Communities",2,"","YGD, GBO (was GPT), YDW, WNS","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,13,0
+"spring_Communities",7,"summer_Communities",3,"","YGD, GBO (was GPT), YDW, WNS","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,11,0
+"spring_Communities",7,"summer_Communities",4,"","YGD, GBO (was GPT), YDW, WNS","WSY, YBN, WOG",0,7,0
+"spring_Communities",7,"summer_Communities",5,"","YGD, GBO (was GPT), YDW, WNS","YWS, WPD, YDT, NRO, NSS",0,9,0
+"spring_Communities",7,"summer_Communities",6,"YGD, GBO (was GPT), YDW, WNS","","SNR (was SNO), GPW, WDY, GSN, YSR, RDO",4,10,0.4
+"spring_Communities",7,"summer_Communities",7,"","YGD, GBO (was GPT), YDW, WNS","PND, RNO, PNG, GLS",0,8,0
+"spring_Communities",7,"summer_Communities",8,"","YGD, GBO (was GPT), YDW, WNS","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,11,0
+"spring_Communities",7,"summer_Communities",9,"","YGD, GBO (was GPT), YDW, WNS","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,16,0
+"spring_Communities",7,"summer_Communities",10,"","YGD, GBO (was GPT), YDW, WNS","WDB",0,5,0
+"spring_Communities",7,"summer_Communities",11,"","YGD, GBO (was GPT), YDW, WNS","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,13,0
+"spring_Communities",8,"summer_Communities",1,"","YGP, YSR, PND, PNG","SWT, SDO, WPW",0,7,0
+"spring_Communities",8,"summer_Communities",2,"","YGP, YSR, PND, PNG","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,13,0
+"spring_Communities",8,"summer_Communities",3,"","YGP, YSR, PND, PNG","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,11,0
+"spring_Communities",8,"summer_Communities",4,"","YGP, YSR, PND, PNG","WSY, YBN, WOG",0,7,0
+"spring_Communities",8,"summer_Communities",5,"","YGP, YSR, PND, PNG","YWS, WPD, YDT, NRO, NSS",0,9,0
+"spring_Communities",8,"summer_Communities",6,"YSR","YGP, PND, PNG","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, RDO",1,13,0.077
+"spring_Communities",8,"summer_Communities",7,"PND, PNG","YGP, YSR","RNO, GLS",2,6,0.333
+"spring_Communities",8,"summer_Communities",8,"","YGP, YSR, PND, PNG","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,11,0
+"spring_Communities",8,"summer_Communities",9,"","YGP, YSR, PND, PNG","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,16,0
+"spring_Communities",8,"summer_Communities",10,"","YGP, YSR, PND, PNG","WDB",0,5,0
+"spring_Communities",8,"summer_Communities",11,"","YGP, YSR, PND, PNG","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,13,0
+"spring_Communities",9,"summer_Communities",1,"","ROW, ROO, YOD, YND","SWT, SDO, WPW",0,7,0
+"spring_Communities",9,"summer_Communities",2,"","ROW, ROO, YOD, YND","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,13,0
+"spring_Communities",9,"summer_Communities",3,"","ROW, ROO, YOD, YND","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,11,0
+"spring_Communities",9,"summer_Communities",4,"","ROW, ROO, YOD, YND","WSY, YBN, WOG",0,7,0
+"spring_Communities",9,"summer_Communities",5,"","ROW, ROO, YOD, YND","YWS, WPD, YDT, NRO, NSS",0,9,0
+"spring_Communities",9,"summer_Communities",6,"","ROW, ROO, YOD, YND","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,14,0
+"spring_Communities",9,"summer_Communities",7,"","ROW, ROO, YOD, YND","PND, RNO, PNG, GLS",0,8,0
+"spring_Communities",9,"summer_Communities",8,"ROW, YOD, YND","ROO","WPB, WNP, SPW, GPB",3,8,0.375
+"spring_Communities",9,"summer_Communities",9,"","ROW, ROO, YOD, YND","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,16,0
+"spring_Communities",9,"summer_Communities",10,"","ROW, ROO, YOD, YND","WDB",0,5,0
+"spring_Communities",9,"summer_Communities",11,"","ROW, ROO, YOD, YND","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,13,0
+"spring_Communities",10,"summer_Communities",1,"","RLB","SWT, SDO, WPW",0,4,0
+"spring_Communities",10,"summer_Communities",2,"","RLB","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,10,0
+"spring_Communities",10,"summer_Communities",3,"","RLB","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,8,0
+"spring_Communities",10,"summer_Communities",4,"","RLB","WSY, YBN, WOG",0,4,0
+"spring_Communities",10,"summer_Communities",5,"","RLB","YWS, WPD, YDT, NRO, NSS",0,6,0
+"spring_Communities",10,"summer_Communities",6,"","RLB","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,11,0
+"spring_Communities",10,"summer_Communities",7,"","RLB","PND, RNO, PNG, GLS",0,5,0
+"spring_Communities",10,"summer_Communities",8,"","RLB","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,8,0
+"spring_Communities",10,"summer_Communities",9,"","RLB","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,13,0
+"spring_Communities",10,"summer_Communities",10,"","RLB","WDB",0,2,0
+"spring_Communities",10,"summer_Communities",11,"","RLB","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,10,0
+"spring_Communities",11,"summer_Communities",1,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","SWT, SDO, WPW",0,11,0
+"spring_Communities",11,"summer_Communities",2,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,17,0
+"spring_Communities",11,"summer_Communities",3,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,15,0
+"spring_Communities",11,"summer_Communities",4,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","WSY, YBN, WOG",0,11,0
+"spring_Communities",11,"summer_Communities",5,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","YWS, WPD, YDT, NRO, NSS",0,13,0
+"spring_Communities",11,"summer_Communities",6,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,18,0
+"spring_Communities",11,"summer_Communities",7,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","PND, RNO, PNG, GLS",0,12,0
+"spring_Communities",11,"summer_Communities",8,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,15,0
+"spring_Communities",11,"summer_Communities",9,"YGY, YBY, GDO, YBT, PBP (was PBB)","WDB, GSD, RPP","WPS, WTW, SGB, PNL, WDT, RGT, STT",5,15,0.333
+"spring_Communities",11,"summer_Communities",10,"WDB","YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","",1,8,0.125
+"spring_Communities",11,"summer_Communities",11,"","WDB, YGY, GSD, YBY, GDO, YBT, RPP, PBP (was PBB)","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,17,0
+"spring_Communities",12,"summer_Communities",1,"","STT, SGB, RGT","SWT, SDO, WPW",0,6,0
+"spring_Communities",12,"summer_Communities",2,"","STT, SGB, RGT","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,12,0
+"spring_Communities",12,"summer_Communities",3,"","STT, SGB, RGT","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,10,0
+"spring_Communities",12,"summer_Communities",4,"","STT, SGB, RGT","WSY, YBN, WOG",0,6,0
+"spring_Communities",12,"summer_Communities",5,"","STT, SGB, RGT","YWS, WPD, YDT, NRO, NSS",0,8,0
+"spring_Communities",12,"summer_Communities",6,"","STT, SGB, RGT","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,13,0
+"spring_Communities",12,"summer_Communities",7,"","STT, SGB, RGT","PND, RNO, PNG, GLS",0,7,0
+"spring_Communities",12,"summer_Communities",8,"","STT, SGB, RGT","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,10,0
+"spring_Communities",12,"summer_Communities",9,"STT, SGB, RGT","","YBY, YGY, YBT, GDO, WPS, WTW, PNL, WDT, PBP (was PBB)",3,12,0.25
+"spring_Communities",12,"summer_Communities",10,"","STT, SGB, RGT","WDB",0,4,0
+"spring_Communities",12,"summer_Communities",11,"","STT, SGB, RGT","RTT, YYN (was YNO), GDN (was GDY), GPR, WDD, CRY, WDG, YRP, WYD",0,12,0
+"spring_Communities",13,"summer_Communities",1,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","SWT, SDO, WPW",0,9,0
+"spring_Communities",13,"summer_Communities",2,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","CGN, GNG, SDR, SSS, SYO, PDN, RBP, SWB, SDT",0,15,0
+"spring_Communities",13,"summer_Communities",3,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","SOG, GTP, YPS, SPT, PLS, NOD, WPG",0,13,0
+"spring_Communities",13,"summer_Communities",4,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","WSY, YBN, WOG",0,9,0
+"spring_Communities",13,"summer_Communities",5,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","YWS, WPD, YDT, NRO, NSS",0,11,0
+"spring_Communities",13,"summer_Communities",6,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","YDW, WNS, SNR (was SNO), GBO (was GPT), YGD, GPW, WDY, GSN, YSR, RDO",0,16,0
+"spring_Communities",13,"summer_Communities",7,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","PND, RNO, PNG, GLS",0,10,0
+"spring_Communities",13,"summer_Communities",8,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","WPB, WNP, SPW, ROW, YND, YOD, GPB",0,13,0
+"spring_Communities",13,"summer_Communities",9,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","YBY, YGY, YBT, GDO, WPS, WTW, SGB, PNL, WDT, RGT, PBP (was PBB), STT",0,18,0
+"spring_Communities",13,"summer_Communities",10,"","GDN (was GDY), YYN (was YNO), RTT, WYD, YSG, CRY","WDB",0,7,0
+"spring_Communities",13,"summer_Communities",11,"GDN (was GDY), YYN (was YNO), RTT, WYD, CRY","YSG","GPR, WDD, WDG, YRP",5,10,0.5

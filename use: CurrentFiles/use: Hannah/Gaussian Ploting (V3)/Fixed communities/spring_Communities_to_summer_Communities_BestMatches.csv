@@ -1,0 +1,13 @@
+"Season1","Community1","Season2","Community2","SharedBirds","LostBirds","GainedBirds","Shared","Union","Jaccard"
+"spring_Communities",1,"summer_Communities",3,"SOG, PLS, YPS","CGN, RNG","GTP, SPT, NOD, WPG",3,9,0.333
+"spring_Communities",2,"summer_Communities",1,"SWT, SDO","","WPW",2,3,0.667
+"spring_Communities",3,"summer_Communities",2,"GNG, PDN, SYO, SWB, RBP","YPN","CGN, SDR, SSS, SDT",5,10,0.5
+"spring_Communities",4,"summer_Communities",4,"WSY, YBN, WOG","WPG","",3,4,0.75
+"spring_Communities",5,"summer_Communities",5,"YWS","","WPD, YDT, NRO, NSS",1,5,0.2
+"spring_Communities",6,"summer_Communities",5,"YDT","","YWS, WPD, NRO, NSS",1,5,0.2
+"spring_Communities",7,"summer_Communities",6,"YGD, GBO (was GPT), YDW, WNS","","SNR (was SNO), GPW, WDY, GSN, YSR, RDO",4,10,0.4
+"spring_Communities",8,"summer_Communities",7,"PND, PNG","YGP, YSR","RNO, GLS",2,6,0.333
+"spring_Communities",9,"summer_Communities",8,"ROW, YOD, YND","ROO","WPB, WNP, SPW, GPB",3,8,0.375
+"spring_Communities",11,"summer_Communities",9,"YGY, YBY, GDO, YBT, PBP (was PBB)","WDB, GSD, RPP","WPS, WTW, SGB, PNL, WDT, RGT, STT",5,15,0.333
+"spring_Communities",12,"summer_Communities",9,"STT, SGB, RGT","","YBY, YGY, YBT, GDO, WPS, WTW, PNL, WDT, PBP (was PBB)",3,12,0.25
+"spring_Communities",13,"summer_Communities",11,"GDN (was GDY), YYN (was YNO), RTT, WYD, CRY","YSG","GPR, WDD, WDG, YRP",5,10,0.5
