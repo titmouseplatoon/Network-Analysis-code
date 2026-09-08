@@ -1,6 +1,6 @@
 # Files Needed:
   # Master Banding Sheet
-  # Nesting log for years of interest
+  # Nesting log for years of interest (first column must be Nestbox numbers, remove "nesrbox used" column if present)
   # "Bird_Community_Flow_Table.csv" - a longitudinal analysis output
   # a standardized community CSV that follows logic of the Sankey 
       # this was made manualy - see "community standerdization.csv" for example
@@ -8,9 +8,13 @@
 
 #### Load your files ####
 
+
+# MBS
 cat("select the most recent master banding sheet")
 mbs <- read_csv(file.choose()) 
 
+
+# Nest Logs
 cat( "load the nesting logs (as many datasheets as you need)")
 
 # Create an empty list to store datasets
@@ -57,19 +61,91 @@ length(nesting_datasets)
 names(nesting_datasets)
 
 
-
+# Community flow table
 cat("select the Bird_Community_Flow_Table.csv")
 flow_table <- read_csv(file.choose()) 
 
+
+# Standerdized Communitties 
 cat("select your standardized community csv ")
 map <- read_csv(file.choose()) 
+
+
+# RFID Data
+cat( "load the RFID merged datasheets (as many datasheets as you need)")
+
+# Create an empty list to store datasets
+
+rfid_datasets <- list()
+rfid_seasons <- list()
+
+# Counter so each dataset gets a unique number
+
+dataset_number <- 1
+
+repeat {
+  
+  # Tell user what to do
+  
+  cat("\nPick RFID Merged Dataset", dataset_number,
+      "(Press Cancel when finished selecting files)\n")
+  
+  # Choose file
+  selected_file <- tryCatch(
+    file.choose(),
+    error = function(e) NULL
+  )
+  
+  # Stop if cancel pressed
+  if (is.null(selected_file)) {
+    cat("\nFinished selecting datasets.\n")
+    break
+  }
+  
+  # Extract filename
+  file_name <- tools::file_path_sans_ext(
+    basename(selected_file)
+  )
+  
+  # Read dataset
+  rfid_datasets[[file_name]] <- read_csv(selected_file)
+  
+  # Ask for season
+  season <- rstudioapi::showPrompt(
+    title = "Dataset Season",
+    message = paste(
+      "What season is this RFID dataset?\n\n",
+      file_name
+    ),
+    default = ""
+  )
+  
+  if (is.null(season) || season == "") {
+    season <- "Unknown"
+  }
+  
+  # Save season associated with this file
+  rfid_seasons[[file_name]] <- season
+  
+  cat("Loaded:", file_name, "\n")
+  cat("Season:", season, "\n")
+  
+  dataset_number <- dataset_number + 1
+}
+
+# Check nesting datasets
+length(rfid_datasets)
+names(rfid_datasets)
+
 
 #### Check files ####
 
 head(mbs)
 head(nesting_datasets)
 head(flow_table)
-head (map)
+head(map)
+head(rfid_datasets)
+
 
 #### lets do some cleaning ####
 
@@ -80,35 +156,313 @@ map <- map %>%
 
 print(map, n = Inf)
 
+
+
+
 # now lets clean the nest logs
 
 # make a cleaning function:
 clean_bird <- function(x) {
   x <- as.character(x)
-  x[x %in% c(".", "?", "", NA)] <- NA
+  x[x %in% c(".", "?", "", NA )] <- NA
   str_extract(x, "^[A-Za-z0-9]+")
 }
 
 # and clean each file 
 
-nesting_clean <- lapply(nesting_datasets, function(nest_df) {
+nesting_clean <- setNames(
+  lapply(names(nesting_datasets), function(file_name) {
+  
+  nest_df <- nesting_datasets[[file_name]]
   
   nest_df %>%
     transmute(
-      Nestbox = `11`,
+      Nestbox = .[[1]],
       FirstRound_Bird1 = `PAIRS, first round`,
       FirstRound_Bird2 = `...3`,
       SecondRound_Bird1 = `PAIRS, second round`,
       SecondRound_Bird2 = `...6`,
       SecondRound_Bird3 = `...7`
     ) %>%
+    
+
+  pivot_longer(
+    cols = -Nestbox,
+    names_to = c("Round", "BirdNumber"),
+    names_pattern = "(FirstRound|SecondRound)_(Bird\\d+)",
+    values_to = "Bird"
+  ) %>%
+    
     mutate(
-      across(
-        FirstRound_Bird1:SecondRound_Bird3,
-        clean_bird
-      )
+      Bird = clean_bird(Bird),
+      Year = as.numeric(str_extract(names(nesting_datasets), "\\d{4}"))
+    ) %>%
+    
+    filter(!is.na(Bird)
+    ) %>%
+  
+  
+    filter(
+      !is.na(Bird),
+      Bird != "color",
+      Bird != "metal"
+    )
+
+  
+}),
+names(nesting_datasets)
+)
+
+#now check 
+print(nesting_clean[[1]], n = 20)
+
+
+
+# Now clean the RFID data... long code... sorry!
+rfid_processed <- lapply(rfid_datasets, function(df_events) {
+  
+  # Clean bird color codes
+  df_events <- df_events %>%
+    mutate(
+      ColorCombo = clean_bird(ColorCombo)
+    )
+  
+  # Make sure DateTime is actually a date/time
+  df_events <- df_events %>%
+    mutate(
+      DateTime = as.POSIXct(DateTime)
+    )
+  
+  # Determine the year represented the most
+  # This ignores strange startup reads from other years
+  network_year <- as.integer(
+    names(which.max(
+      table(format(df_events$DateTime, "%Y"))
+    ))
+  )
+  
+  # Get one row of bird attributes per ColorCombo
+  bird_attributes <- df_events %>%
+    select(
+      ColorCombo,
+      Sex,
+      DateCaptured,
+      LocationCaptured,
+      Age
+    ) %>%
+    filter(!is.na(ColorCombo)) %>%
+    distinct(ColorCombo, .keep_all = TRUE)
+  
+  network_season <- rfid_seasons[[file_name]]
+  
+  # Make sure DateCaptured is a date
+  bird_attributes <- bird_attributes %>%
+    mutate(
+      DateCaptured = mdy(DateCaptured)
+    )
+  
+  # Calculate capture year
+  capture_year <- as.integer(
+    format(bird_attributes$DateCaptured, "%Y")
+  )
+  
+  # Calculate years between capture and network
+  years_elapsed <- network_year - capture_year
+  
+  # Save original age
+  old_age <- bird_attributes$Age
+  
+  # Function to update age
+  update_age <- function(age, years){
+    
+    if(is.na(age) | is.na(years))
+      return(age)
+    
+    if(age == "Nestling"){
+      if(years == 0) return("Nestling")
+      if(years == 1) return("SY")
+      return("ASY")
+    }
+    
+    if(age == "HY"){
+      if(years == 0) return("HY")
+      if(years == 1) return("SY")
+      return("ASY")
+    }
+    
+    if(age == "AHY"){
+      if(years == 0) return("AHY")
+      return("ASY")
+    }
+    
+    if(age == "SY"){
+      if(years == 0) return("SY")
+      return("ASY")
+    }
+    
+    if(age == "ASY"){
+      return("ASY")
+    }
+    
+    age
+  }
+  
+  # Update ages
+  bird_attributes$Age <- mapply(
+    update_age,
+    bird_attributes$Age,
+    years_elapsed
+  )
+  
+  # Make feeder list
+  feeder_list <- df_events %>%
+    select(
+      ColorCombo,
+      Feeder
+    ) %>%
+    filter(
+      !is.na(ColorCombo),
+      !is.na(Feeder)
+    ) %>%
+    distinct(ColorCombo, Feeder)
+  
+  # Collapse feeders into one cell per bird
+  feeder_list <- feeder_list %>%
+    group_by(ColorCombo) %>%
+    summarise(
+      Feeders = paste(sort(unique(Feeder)), collapse = ", "),
+      .groups = "drop"
+    )
+  
+  # Put bird information + feeder information together
+  bird_attributes %>%
+    left_join(
+      feeder_list,
+      by = "ColorCombo"
+    ) %>%
+    mutate(
+      NetworkSeason = network_season
     )
 })
 
-#now check 
-print(nesting_clean[[names(nesting_clean)[1]]], n = 20)
+# Check the clean rfid datasheet
+print(rfid_processed[[1]], n = 20)
+
+
+##### Make Bird Master List ####
+
+all_birds <- sort(unique(c(
+  unlist(lapply(nesting_clean, function(x) x$Bird)),
+  unlist(lapply(rfid_processed, function(x) x$ColorCombo))
+)))
+
+bird_history <- tibble(
+  Bird = all_birds
+)
+
+#check
+print (bird_history)
+
+
+#### add stabel bird history ####
+
+first_rfid <- rfid_processed[[1]]
+
+bird_history <- bird_history %>%
+  left_join(
+    first_rfid %>%
+      select(
+        ColorCombo,
+        Sex,
+        DateCaptured,
+        LocationCaptured
+      ) %>%
+      rename(Bird = ColorCombo),
+    by = "Bird"
+  )
+
+#check
+print (bird_history)
+
+
+#### add nesting info ####
+
+for (nest_name in names(nesting_clean)) {
+  
+  nest_df <- nesting_clean[[nest_name]]
+  
+  nest_year <- unique(nest_df$Year)
+  
+  # Create names for this nesting period
+  nest_df <- nest_df %>%
+    select(
+      Bird,
+      Nestbox,
+      Round,
+      BirdNumber
+    ) %>%
+    rename(
+      !!paste0("Nest_", nest_year, "_Nestbox") := Nestbox,
+      !!paste0("Nest_", nest_year, "_Round") := Round,
+      !!paste0("Nest_", nest_year, "_BirdNumber") := BirdNumber
+    )
+  
+  # Add to master table
+  bird_history <- bird_history %>%
+    left_join(
+      nest_df,
+      by = "Bird"
+    )
+}
+
+#check
+print (bird_history)
+
+
+#### add rfid data ####
+
+for (rfid_name in names(rfid_processed)) {
+  
+  rfid_df <- rfid_processed[[rfid_name]]
+  
+  # The period you entered when the file was loaded
+  network_period <- rfid_seasons[[rfid_name]]
+  
+  # Make the period safe for use in column names
+  period_name <- gsub(" ", "_", network_period)
+  
+  rfid_df <- rfid_df %>%
+    select(
+      ColorCombo,
+      Age,
+      Feeders,
+      NetworkSeason
+    ) %>%
+    rename(
+      Bird = ColorCombo,
+      !!paste0("RFID_", period_name, "_Season") := NetworkSeason,
+      !!paste0("RFID_", period_name, "_Age") := Age,
+      !!paste0("RFID_", period_name, "_Feeders") := Feeders
+    )
+  
+  bird_history <- bird_history %>%
+    left_join(
+      rfid_df,
+      by = "Bird"
+    )
+}
+
+#check
+print(bird_history) # look at bottum text in gray to see additonal variable 
+
+
+
+
+
+#### write CSV ####
+
+write.csv(
+  bird_history,
+  file="Bird_Metadata.csv",
+  row.names = FALSE
+)

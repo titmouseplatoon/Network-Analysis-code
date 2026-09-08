@@ -1,0 +1,111 @@
+"Bird","Sex","DateCaptured","LocationCaptured","Nest_2026_Nestbox","Nest_2026_Round","Nest_2026_BirdNumber","RFID_09-10_2025_Age","RFID_09-10_2025_Feeders","RFID_09-10_2025_Season"
+"CGN",NA,2022-05-15,"NB45",NA,NA,NA,"ASY","A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S","09-10 2025"
+"CRY","M",2024-05-28,"NB18",NA,NA,NA,"ASY","R, S","09-10 2025"
+"GBO","M",2025-05-28,"FH","10","FirstRound","Bird2","AHY","H, I","09-10 2025"
+"GDD","M",2025-09-21,"FS",NA,NA,NA,"HY","R, S","09-10 2025"
+"GDN",NA,NA,NA,"18","FirstRound","Bird1",NA,NA,NA
+"GDO","M",2025-05-10,"NB15B",NA,NA,NA,"Nestling","O, P, Q","09-10 2025"
+"GDW","M",2024-05-22,"FL",NA,NA,NA,"ASY.","K, L, M","09-10 2025"
+"GNG",NA,NA,NA,"1","FirstRound","Bird1",NA,NA,NA
+"GNT","M",2023-05-03,"NB62","16B (old: 94)","FirstRound","Bird1","ASY","P, Q, R","09-10 2025"
+"GOS","M",2025-04-21,"NB1",NA,NA,NA,"Nestling","B, C","09-10 2025"
+"GPN",NA,NA,NA,"75","FirstRound","Bird1",NA,NA,NA
+"GPW",NA,NA,NA,"40","FirstRound","Bird1",NA,NA,NA
+"GPY",NA,NA,NA,"42","FirstRound","Bird1",NA,NA,NA
+"GRP",NA,NA,NA,"81","FirstRound","Bird2",NA,NA,NA
+"GSD",NA,NA,NA,"52","FirstRound","Bird2",NA,NA,NA
+"GTR","F",2024-04-13,"NB17",NA,NA,NA,"ASY","S","09-10 2025"
+"PBP","M",2024-04-07,"NB16A","16A","FirstRound","Bird1","ASY","P, Q","09-10 2025"
+"PBS",NA,2023-06-12,"NB52",NA,NA,NA,"ASY","O, P, Q","09-10 2025"
+"PBWorPWB","F",2023-06-28,"FG",NA,NA,NA,"ASY","C, D","09-10 2025"
+"PDN",NA,NA,NA,"1","FirstRound","Bird2",NA,NA,NA
+"PLS","M",2023-09-10,"FE","5","FirstRound","Bird1","ASY","E","09-10 2025"
+"PLS","M",2023-09-10,"FE","6","FirstRound","Bird1","ASY","E","09-10 2025"
+"PNB",NA,NA,NA,"20","FirstRound","Bird2",NA,NA,NA
+"PND","M",2025-04-30,"NB14",NA,NA,NA,"Nestling","K, L","09-10 2025"
+"PNG","M",2025-04-30,"NB14",NA,NA,NA,"Nestling","K, L","09-10 2025"
+"PNL","F",2023-07-10,"FP",NA,NA,NA,"ASY","P, Q","09-10 2025"
+"PNP","M",2025-04-30,"NB14",NA,NA,NA,"Nestling","K, M","09-10 2025"
+"PNW",NA,2023-07-04,"FE",NA,NA,NA,"ASY","D, E","09-10 2025"
+"RBP","M",2025-01-26,"FC",NA,NA,NA,"AHY","C, D","09-10 2025"
+"RBT","M",2023-07-29,"FC",NA,NA,NA,"ASY","C","09-10 2025"
+"RDP",NA,NA,NA,"84","FirstRound","Bird1",NA,NA,NA
+"RDY",NA,NA,NA,"2","FirstRound","Bird2",NA,NA,NA
+"RGT","M",2025-06-20,"FR",NA,NA,NA,"HY","R","09-10 2025"
+"RLB","F",2024-04-07,"NB15C",NA,NA,NA,"ASY","M","09-10 2025"
+"ROO","M",2025-06-16,"FM","15B (old: 54)","FirstRound","Bird2","HY","M, N","09-10 2025"
+"ROR","M",2025-04-17,"NB15a",NA,NA,NA,"Nestling","N","09-10 2025"
+"ROS",NA,NA,NA,"59","FirstRound","Bird1",NA,NA,NA
+"ROW",NA,NA,NA,"14","FirstRound","Bird2",NA,NA,NA
+"ROW",NA,NA,NA,"53","FirstRound","Bird1",NA,NA,NA
+"ROY","M",2025-04-17,"NB15a",NA,NA,NA,"Nestling","N, O","09-10 2025"
+"RPN",NA,NA,NA,"EB3","FirstRound","Bird1",NA,NA,NA
+"RPN",NA,NA,NA,"EB4","FirstRound","Bird1",NA,NA,NA
+"RPP",NA,NA,NA,"16A","FirstRound","Bird2",NA,NA,NA
+"RPS",NA,NA,NA,"38B (old: 95) DNE?","FirstRound","Bird1",NA,NA,NA
+"RRD","F",2025-04-13,"NB01",NA,NA,NA,"AHY","A","09-10 2025"
+"RRR","M",2023-09-10,"FA",NA,NA,NA,"ASY","A","09-10 2025"
+"RRY","F",2023-09-10,"FA",NA,NA,NA,"ASY","A","09-10 2025"
+"RSD","M",2025-06-18,"FC",NA,NA,NA,"HY","C, D","09-10 2025"
+"RSG",NA,NA,NA,"16B (old: 94)","FirstRound","Bird2",NA,NA,NA
+"RTP","M",2025-04-18,"NB5",NA,NA,NA,"Nestling","E","09-10 2025"
+"RTT","F",2025-04-18,"NB5",NA,NA,NA,"Nestling","R, S","09-10 2025"
+"SDO","M",2025-06-02,"FA",NA,NA,NA,"HY","A","09-10 2025"
+"SGB","F",2025-05-22,"FR",NA,NA,NA,"HY","R","09-10 2025"
+"SOG","M",2025-04-27,"NBEB1",NA,NA,NA,"Nestling","E","09-10 2025"
+"SOT","M",2025-04-27,"NBEB1",NA,NA,NA,"Nestling","D, E","09-10 2025"
+"SPD",NA,NA,NA,"75","FirstRound","Bird2",NA,NA,NA
+"SPY",NA,NA,NA,"38A","FirstRound","Bird1",NA,NA,NA
+"SRP","F",2024-06-11,"FQ",NA,NA,NA,"ASY","P, Q, R","09-10 2025"
+"STP",NA,NA,NA,"82","FirstRound","Bird1",NA,NA,NA
+"STS",NA,NA,NA,"67","FirstRound","Bird2",NA,NA,NA
+"STS",NA,NA,NA,"68","FirstRound","Bird2",NA,NA,NA
+"STT","M",2024-06-11,"FR",NA,NA,NA,"SY","R","09-10 2025"
+"SWB","M",2024-06-19,"NB04","2","FirstRound","Bird1","SY","C","09-10 2025"
+"SWS","F",2024-07-08,"FN",NA,NA,NA,"SY","N","09-10 2025"
+"SWT","F",2024-07-01,"FA",NA,NA,NA,"SY","A","09-10 2025"
+"SYO","M",2024-06-18,"FA",NA,NA,NA,"SY","B, C","09-10 2025"
+"SYR","F",2024-06-05,"FB",NA,NA,NA,"ASY","C","09-10 2025"
+"SYT","F",2024-06-18,"FD",NA,NA,NA,"SY","C, D","09-10 2025"
+"UNB",NA,NA,NA,"42","FirstRound","Bird2",NA,NA,NA
+"WBO","M",2025-04-13,"NB15a","15B (old: 54)","FirstRound","Bird1","AHY","N, O","09-10 2025"
+"WBT","M",2025-04-13,"NB03",NA,NA,NA,"AHY","C, D, E, F","09-10 2025"
+"WDB",NA,NA,NA,"15C (old: 62)","FirstRound","Bird2",NA,NA,NA
+"WDG","M",2025-06-10,"NB17",NA,NA,NA,"Nestling","S","09-10 2025"
+"WDN","M",2025-05-31,"NB16B",NA,NA,NA,"Nestling","Q, R","09-10 2025"
+"WDS",NA,NA,NA,"52","FirstRound","Bird1",NA,NA,NA
+"WDW","M",2025-05-31,"NB16B",NA,NA,NA,"Nestling","Q, R","09-10 2025"
+"WND",NA,NA,NA,"84","FirstRound","Bird2",NA,NA,NA
+"WNP",NA,NA,NA,"53","FirstRound","Bird2",NA,NA,NA
+"WNS",NA,NA,NA,"9","FirstRound","Bird2",NA,NA,NA
+"WOG","M",2025-07-01,"MN-FF","7","FirstRound","Bird1","HY","F, G, H, I","09-10 2025"
+"WSY","F",2025-04-19,"NB8",NA,NA,NA,"AHY","F, G, H, I","09-10 2025"
+"WTP",NA,NA,NA,"59","FirstRound","Bird2",NA,NA,NA
+"WWB","F",2023-04-22,"NB50",NA,NA,NA,"ASY","H","09-10 2025"
+"WWD","M",2025-05-31,"NB16B",NA,NA,NA,"Nestling","P, Q, R","09-10 2025"
+"WYD","M",2025-06-10,"NB17",NA,NA,NA,"Nestling","R, S","09-10 2025"
+"WYP",NA,NA,NA,"81","FirstRound","Bird1",NA,NA,NA
+"YBN","M",2024-04-14,"NB21","7","FirstRound","Bird2","SY","F, H","09-10 2025"
+"YBT","M",2024-04-14,"NB15C","15C (old: 62)","FirstRound","Bird1","SY","N, O, P","09-10 2025"
+"YBY","M",2024-04-14,"NB15C",NA,NA,NA,"SY","N, O, P","09-10 2025"
+"YDD","F",2025-06-25,"FG",NA,NA,NA,"HY","G, I, J, K, L","09-10 2025"
+"YDP",NA,2025-06-18,"FD",NA,NA,NA,"AHY","D, E","09-10 2025"
+"YDT","M",2025-05-07,"NB22",NA,NA,NA,"Nestling","F, G","09-10 2025"
+"YDW","M",2025-06-25,"FH","9","FirstRound","Bird1","HY","H, I","09-10 2025"
+"YGD","M",2025-05-21,"FH","10","FirstRound","Bird1","AHY","H, I","09-10 2025"
+"YGY","M",2024-04-19,"NB53",NA,NA,NA,"SY","O","09-10 2025"
+"YND","M",2025-09-21,"FO",NA,NA,NA,"AHY","O","09-10 2025"
+"YNR",NA,NA,NA,"67","FirstRound","Bird1",NA,NA,NA
+"YNR",NA,NA,NA,"68","FirstRound","Bird1",NA,NA,NA
+"YOD",NA,NA,NA,"14","FirstRound","Bird1",NA,NA,NA
+"YOP","M",2025-04-18,"NB13",NA,NA,NA,"Nestling","L, M","09-10 2025"
+"YOS",NA,NA,NA,"20","FirstRound","Bird1",NA,NA,NA
+"YPS","F",2025-06-18,"FE","5","FirstRound","Bird2","HY","E, F","09-10 2025"
+"YPS","F",2025-06-18,"FE","6","FirstRound","Bird2","HY","E, F","09-10 2025"
+"YPT",NA,NA,NA,"EB4","FirstRound","Bird2",NA,NA,NA
+"YPW","F",2025-05-31,"FR",NA,NA,NA,"HY","R","09-10 2025"
+"YSR","M",2024-06-11,"NB10",NA,NA,NA,"SY","I, J","09-10 2025"
+"YWD","F",2025-04-17,"NB3",NA,NA,NA,"AHY","C, D, F","09-10 2025"
+"YWS","M",2024-04-19,"NB22",NA,NA,NA,"SY","F, G","09-10 2025"
+"YXT",NA,NA,NA,"EB3","FirstRound","Bird2",NA,NA,NA
+"YYN","M",2025-06-06,"NB18","18","FirstRound","Bird2","Nestling","R, S","09-10 2025"
