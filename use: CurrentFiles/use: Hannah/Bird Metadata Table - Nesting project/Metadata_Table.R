@@ -1,17 +1,19 @@
 # Files Needed:
-  # Master Banding Sheet
+  # the merged RFID datasheets (includes Master Banding Sheet data)
   # Nesting log for years of interest (first column must be Nestbox numbers, remove "nesrbox used" column if present)
   # "Bird_Community_Flow_Table.csv" - a longitudinal analysis output
   # a standardized community CSV that follows logic of the Sankey 
       # this was made manualy - see "community standerdization.csv" for example
 
 
+# Now lets create a massive bird lookup table! 
+
+# Not sure what to do with all this wonderful data???
+#   \/  \/  \/  
+#hlbaetge@gmail.com (Hannah Baetge)
+
+
 #### Load your files ####
-
-
-# MBS
-cat("select the most recent master banding sheet")
-mbs <- read_csv(file.choose()) 
 
 
 # Nest Logs
@@ -140,7 +142,6 @@ names(rfid_datasets)
 
 #### Check files ####
 
-head(mbs)
 head(nesting_datasets)
 head(flow_table)
 head(map)
@@ -453,9 +454,171 @@ for (rfid_name in names(rfid_processed)) {
 }
 
 #check
-print(bird_history) # look at bottum text in gray to see additonal variable 
+print(bird_history) # look at bottom text in gray to see additional variables 
 
 
+
+#### add community data #### 
+# may need to edit this in the future if using more datasets
+
+flow_table <- flow_table %>%
+  rename(
+    Fall_2025_Community = `Fall 2025 Pre-Nesting_Communities`,
+    Spring_2026_Community = `Spring 2026 Nesting Period_Communities`,
+    Summer_2026_Community = `Summer 2026 Post-Fledging_Communities`
+  )
+
+
+bird_history <- bird_history %>%
+  left_join(
+    flow_table %>%
+      rename(Bird = ColorCombo),
+    by = "Bird"
+  )
+
+
+#### add standardized communities ####
+
+# Clean bird IDs in the community flow table
+flow_table_standard <- flow_table %>%
+  mutate(
+    ColorCombo = clean_bird(ColorCombo)
+  )
+
+# Give the community columns easier names
+flow_table_standard <- flow_table_standard %>%
+  rename(
+    Fall_2025_Community = `Fall 2025 Pre-Nesting_Communities`,
+    Spring_2026_Community = `Spring 2026 Nesting Period_Communities`,
+    Summer_2026_Community = `Summer 2026 Post-Fledging_Communities`
+  )
+
+# reformat map table 
+    #standardized   Period   CommunityNumber
+    # 1              fall     1
+    # 1              spring   1
+    # 1              summer   2
+    # 2              fall     10
+    # ect....
+
+community_map_long <- map %>%
+  pivot_longer(
+    cols = c(fall, spring, summer),
+    names_to = "Period",
+    values_to = "CommunityNumber"
+  ) %>%
+  mutate(
+    Period = str_to_title(Period)
+  )
+
+# extract original community numbers
+community_observations <- flow_table_standard %>%
+  transmute(
+    Bird = ColorCombo,
+    
+    Fall = as.numeric(
+      str_extract(Fall_2025_Community, "\\d+")
+    ),
+    
+    Spring = as.numeric(
+      str_extract(Spring_2026_Community, "\\d+")
+    ),
+    
+    Summer = as.numeric(
+      str_extract(Summer_2026_Community, "\\d+")
+    )
+  )
+
+# compare to map
+community_standardized <- community_observations %>%
+  pivot_longer(
+    cols = c(Fall, Spring, Summer),
+    names_to = "Period",
+    values_to = "CommunityNumber"
+  ) %>%
+  left_join(   
+    relationship = "many-to-many",
+    community_map_long,
+    by = c("Period", "CommunityNumber")
+  )
+
+# find best match
+
+standardized_assignments <- community_standardized %>%
+  
+  # Remove periods where the bird was not detected
+  filter(
+    !is.na(CommunityNumber),
+    !is.na(standardized)
+  ) %>%
+  
+  # Multiple rows for the same Bird + Period + standardized
+  # should count as only ONE match
+  distinct(
+    Bird,
+    Period,
+    standardized
+  ) %>%
+  
+  # Count the number of periods supporting each
+  # standardized community
+  count(
+    Bird,
+    standardized,
+    name = "Matches"
+  ) %>%
+  
+  # Find the maximum number of matches for each bird
+  group_by(Bird) %>%
+  mutate(
+    BestMatches = max(Matches)
+  ) %>%
+  
+  # Keep only standardized communities tied for the
+  # highest number of matches
+  filter(
+    Matches == BestMatches
+  ) %>%
+  
+  # Now determine whether there is one winner or a tie
+  summarise(
+    StandardizedCommunity = if (n() == 1) {
+      first(standardized)
+    } else {
+      NA_real_
+    },
+    
+    Matches = first(BestMatches),
+    
+    Ambiguous = n() > 1,
+    
+    .groups = "drop"
+  )
+
+
+#check 
+standardized_assignments %>%
+  arrange(Bird) %>%
+  head(30)
+
+
+# add to csv
+
+bird_history <- bird_history %>%
+  left_join(
+    standardized_assignments %>%
+      select(
+        Bird,
+        StandardizedCommunity,
+        Matches
+      ),
+    by = "Bird"
+  )
+
+
+# check 
+# Shows all rows, but only the last 3 columns
+tail(bird_history[ , (ncol(bird_history) - 2):ncol(bird_history)])
 
 
 
