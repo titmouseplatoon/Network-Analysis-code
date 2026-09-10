@@ -1,10 +1,24 @@
 # Files Needed:
+  # the most recent copy of the Master Banding Sheet
   # the merged RFID datasheets (includes Master Banding Sheet data)
-  # Nesting log for years of interest (first column must be Nestbox numbers, remove "nesrbox used" column if present)
+  # Nesting log for years of interest 
+    #first column must be Nestbox numbers, remove "nestbox used" column if present
+    # collum names must match the 2026 log ex: 1:Nestbox	2:PAIRS, first round 3:-blank- 4:-blank-	5:PAIRS, second round" 6:-blank- 7:-blank-		
   # "Bird_Community_Flow_Table.csv" - a longitudinal analysis output
   # a standardized community CSV that follows logic of the Sankey 
       # this was made manualy - see "community standerdization.csv" for example
 
+########### The easiest way to run this code is to:
+#Select all (Mac: Command + A)
+#Press run (Top right of script panel)
+#The code has built-in prompts that will ask you to select and name files
+# Each run will make 1 file output : the metadata CSV
+
+# If you need to find your Working Directory type: getwd() into the console
+# Need to change your Working Directory?
+# Click Session in the top menu bar.
+# Hover over Set Working Directory.
+# Click "Choose Directory"....Select your folder and click Open. OR choose "To Source File Location" to set it to the folder where your active script is saved.
 
 # Now lets create a massive bird lookup table! 
 
@@ -15,6 +29,9 @@
 
 #### Load your files ####
 
+# Master Banding Sheet 
+cat("select your most recent Master Banding Sheet csv ")
+mbs <- read_csv(file.choose()) 
 
 # Nest Logs
 cat( "load the nesting logs (as many datasheets as you need)")
@@ -68,7 +85,7 @@ cat("select the Bird_Community_Flow_Table.csv")
 flow_table <- read_csv(file.choose()) 
 
 
-# Standerdized Communitties 
+# Standardized Communities 
 cat("select your standardized community csv ")
 map <- read_csv(file.choose()) 
 
@@ -139,9 +156,11 @@ repeat {
 length(rfid_datasets)
 names(rfid_datasets)
 
-
+#### YOU CAN START OVER FROM HERE WITHOUT RE-LOADING FILES ####
+  #hallelujah 
 #### Check files ####
 
+head(mbs)
 head(nesting_datasets)
 head(flow_table)
 head(map)
@@ -160,61 +179,68 @@ print(map, n = Inf)
 
 
 
-# now lets clean the nest logs
+# now let's clean the nest logs
 
-# make a cleaning function:
+# Make a cleaning function
 clean_bird <- function(x) {
   x <- as.character(x)
-  x[x %in% c(".", "?", "", NA )] <- NA
+  x[x %in% c(".", "?", "", NA)] <- NA
   str_extract(x, "^[A-Za-z0-9]+")
 }
 
-# and clean each file 
+# Create an empty list for the cleaned datasets
+nesting_clean <- list()
 
-nesting_clean <- setNames(
-  lapply(names(nesting_datasets), function(file_name) {
+# Clean each nesting file
+for (file_name in names(nesting_datasets)) {
+  
+  cat("\nCleaning:", file_name, "\n")
   
   nest_df <- nesting_datasets[[file_name]]
   
-  nest_df %>%
+  cleaned_df <- nest_df %>%
     transmute(
       Nestbox = .[[1]],
-      FirstRound_Bird1 = `PAIRS, first round`,
-      FirstRound_Bird2 = `...3`,
-      SecondRound_Bird1 = `PAIRS, second round`,
-      SecondRound_Bird2 = `...6`,
-      SecondRound_Bird3 = `...7`
+      FirstRound_Bird1 = .[[2]],
+      FirstRound_Bird2 = .[[3]],
+      FirstRound_Bird3 = .[[4]],
+      SecondRound_Bird1 = .[[5]],
+      SecondRound_Bird2 = .[[6]],
+      SecondRound_Bird3 = .[[7]]
     ) %>%
-    
-
-  pivot_longer(
-    cols = -Nestbox,
-    names_to = c("Round", "BirdNumber"),
-    names_pattern = "(FirstRound|SecondRound)_(Bird\\d+)",
-    values_to = "Bird"
-  ) %>%
-    
+    pivot_longer(
+      cols = -Nestbox,
+      names_to = c("Round", "BirdNumber"),
+      names_pattern = "(FirstRound|SecondRound)_(Bird\\d+)",
+      values_to = "Bird"
+    ) %>%
     mutate(
       Bird = clean_bird(Bird),
-      Year = as.numeric(str_extract(names(nesting_datasets), "\\d{4}"))
+      Year = as.numeric(str_extract(file_name, "\\d{4}"))
     ) %>%
-    
-    filter(!is.na(Bird)
-    ) %>%
-  
-  
     filter(
       !is.na(Bird),
       Bird != "color",
-      Bird != "metal"
+      Bird != "metal",
+      Bird != "UNB",
+      nchar(Bird) > 1
     )
-
   
-}),
-names(nesting_datasets)
-)
+  # Add cleaned dataset to the list
+  nesting_clean[[file_name]] <- cleaned_df
+  
+  cat("Finished:", file_name, "\n")
+  cat("Rows:", nrow(cleaned_df), "\n")
+  cat("Year:", unique(cleaned_df$Year), "\n")
+}
 
-#now check 
+# Check
+cat("\nCleaned datasets:\n")
+print(names(nesting_clean))
+print(length(nesting_clean))
+
+
+#now check the info
 print(nesting_clean[[1]], n = 20)
 
 
@@ -348,6 +374,8 @@ rfid_processed <- lapply(rfid_datasets, function(df_events) {
 
 # Check the clean rfid datasheet
 print(rfid_processed[[1]], n = 20)
+print(rfid_processed[[2]], n = 20)
+print(rfid_processed[[3]], n = 20)
 
 
 ##### Make Bird Master List ####
@@ -365,20 +393,26 @@ bird_history <- tibble(
 print (bird_history)
 
 
-#### add stabel bird history ####
-
-first_rfid <- rfid_processed[[1]]
+#### add stable bird history ####
 
 bird_history <- bird_history %>%
   left_join(
-    first_rfid %>%
+    mbs %>%
+      arrange(Color.bands..RFID..top.....bottom...ABC., Date..mm.dd.yy.) %>%
+      group_by(Color.bands..RFID..top.....bottom...ABC.) %>%
+      slice_tail(n = 1) %>%
+      ungroup() %>%
       select(
-        ColorCombo,
-        Sex,
-        DateCaptured,
-        LocationCaptured
+        Color.bands..RFID..top.....bottom...ABC.,
+        Sex..M.F.,
+        Date..mm.dd.yy.,
+        Location..F..MN..NB....yellow.if.snap.trapped.in.NB..thus.a.breeder.
       ) %>%
-      rename(Bird = ColorCombo),
+      rename
+        (Bird = Color.bands..RFID..top.....bottom...ABC., 
+          Date_Captured = Date..mm.dd.yy.,
+          Location_Captured = Location..F..MN..NB....yellow.if.snap.trapped.in.NB..thus.a.breeder.,
+          Sex = Sex..M.F.),
     by = "Bird"
   )
 
@@ -412,13 +446,14 @@ for (nest_name in names(nesting_clean)) {
   bird_history <- bird_history %>%
     left_join(
       nest_df,
-      by = "Bird"
+      by = "Bird",
+      relationship = "many-to-many"
     )
 }
 
 #check
 print (bird_history)
-
+tail (bird_history)
 
 #### add rfid data ####
 
@@ -436,8 +471,10 @@ for (rfid_name in names(rfid_processed)) {
     select(
       ColorCombo,
       Age,
-      Feeders,
-      NetworkSeason
+      Feeders
+    ) %>%
+    mutate(
+      NetworkSeason = network_period
     ) %>%
     rename(
       Bird = ColorCombo,
@@ -445,7 +482,6 @@ for (rfid_name in names(rfid_processed)) {
       !!paste0("RFID_", period_name, "_Age") := Age,
       !!paste0("RFID_", period_name, "_Feeders") := Feeders
     )
-  
   bird_history <- bird_history %>%
     left_join(
       rfid_df,
@@ -461,12 +497,22 @@ print(bird_history) # look at bottom text in gray to see additional variables
 #### add community data #### 
 # may need to edit this in the future if using more datasets
 
+#clean bird names
+# Clean bird IDs first
 flow_table <- flow_table %>%
-  rename(
-    Fall_2025_Community = `Fall 2025 Pre-Nesting_Communities`,
-    Spring_2026_Community = `Spring 2026 Nesting Period_Communities`,
-    Summer_2026_Community = `Summer 2026 Post-Fledging_Communities`
+  mutate(
+    ColorCombo = clean_bird(ColorCombo)
   )
+
+# Rename columns only if they have not already been renamed
+if ("Fall 2025 Pre-Nesting_Communities" %in% names(flow_table)) {
+  flow_table <- flow_table %>%
+    rename(
+      Fall_2025_Community = `Fall 2025 Pre-Nesting_Communities`,
+      Spring_2026_Community = `Spring 2026 Nesting Period_Communities`,
+      Summer_2026_Community = `Summer 2026 Post-Fledging_Communities`
+    )
+}
 
 
 bird_history <- bird_history %>%
@@ -478,20 +524,6 @@ bird_history <- bird_history %>%
 
 
 #### add standardized communities ####
-
-# Clean bird IDs in the community flow table
-flow_table_standard <- flow_table %>%
-  mutate(
-    ColorCombo = clean_bird(ColorCombo)
-  )
-
-# Give the community columns easier names
-flow_table_standard <- flow_table_standard %>%
-  rename(
-    Fall_2025_Community = `Fall 2025 Pre-Nesting_Communities`,
-    Spring_2026_Community = `Spring 2026 Nesting Period_Communities`,
-    Summer_2026_Community = `Summer 2026 Post-Fledging_Communities`
-  )
 
 # reformat map table 
     #standardized   Period   CommunityNumber
@@ -617,6 +649,7 @@ bird_history <- bird_history %>%
 
 
 # check 
+print(bird_history)
 # Shows all rows, but only the last 3 columns
 tail(bird_history[ , (ncol(bird_history) - 2):ncol(bird_history)])
 
@@ -629,3 +662,4 @@ write.csv(
   file="Bird_Metadata.csv",
   row.names = FALSE
 )
+
